@@ -1,0 +1,9 @@
+.Projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    font-family: 'Epilogue', sans-serif;
+    color: #2D2D2D;
+}

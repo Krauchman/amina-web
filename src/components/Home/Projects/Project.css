@@ -1,0 +1,23 @@
+.Project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    font-family: 'Epilogue', sans-serif;
+    color: #2D2D2D;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    border: 1px solid black;
+}
+
+.Project {
+    width: 80%;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid black;
+}
