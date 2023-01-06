@@ -1,0 +1,48 @@
+.Footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Epilogue', sans-serif;
+    color: #2D2D2D;
+    font-weight: 400;
+    font-size: 1.1em;
+
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    margin-top: 2em;
+    border-top: 1px solid black;
+}
+
+.Contacts-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+
+.Contact-icons {
+    display: flex;
+
+    gap: 0.5em;
+}
+
+.Footer-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+
+.Footer-logo-container {
+    display: flex;
+
+    gap: 1em;
+}
+
+.Footer-logo {
+    width: 20vw;
+    min-width: 10em;
+}

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-rout
 
 import { Home } from "./components";
 import { NavBar } from "./components";
+import { Footer } from "./components";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ function Layout() {
     <div>
       <NavBar />
       <Outlet />
+      <Footer />
     </div>
   );
 }
