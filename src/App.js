@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-rout
 import { Home } from "./components";
 import { NavBar } from "./components";
 import { Footer } from "./components";
+import { About } from "./components";
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            {/* <Route path="about" element={<About />} /> */}
+            <Route path="about" element={<About />} />
 
             <Route path="*" element={<NoMatch />} />
           </Route>
@@ -35,7 +36,8 @@ function Layout() {
 
 function NoMatch() {
   return (
-    <div>
+    <div className="Page404">
+      <h1 className="Page404-header">404</h1>
       <h2>Nothing to see here!</h2>
       <p>
         <Link to="/">Go to the home page</Link>

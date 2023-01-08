@@ -1,0 +1,53 @@
+.Profile-container {
+    font-family: 'Epilogue', sans-serif;
+    color: #2D2D2D;
+    font-weight: 400;
+    font-size: 1.1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    min-height: 50vh;
+
+    background-color: #D5DEF6;
+}
+
+.Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4em;
+}
+
+.Profile-bio {
+    max-width: 500px;
+    line-height: 1.7em;
+}
+
+.Profile-pic {
+    width: 1vw;
+    min-width: 200px;
+
+    border: 1.5px solid black;
+}
+
+.Profile-title {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5em;
+}
+
+.Profile-title-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.6em;
+}
