@@ -69,8 +69,7 @@
     line-height: 1.6em;
 }
 
-.Doc-body p,
-.Doc-body h1 {
+.Doc-body .block {
     margin-top: 1em;
     margin-bottom: 1em;
 
@@ -82,4 +81,17 @@
     font-size: 1.5em;
     line-height: 1.5em;
     letter-spacing: 0.05em;
+}
+
+.Doc-photo-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.Photo-Card {
+    flex: 1;
+
+    border: 1px solid black;
 }
