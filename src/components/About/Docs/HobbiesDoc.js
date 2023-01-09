@@ -35,15 +35,9 @@ export function HobbiesDoc() {
                         <PhotoCard src={hobby1} title="Graduation Ceremony" />
                         <PhotoCard src={hobby2} title="Local Georgian Cuisine Restaurant" />
                         <PhotoCard src={hobby3} title="My friends on the beach" />
-                    </div>
-
-                    <div className="block Doc-photo-block">
                         <PhotoCard src={hobby4} title="Kazakh National Jewerly Store" />
                         <PhotoCard src={hobby5} title="Man with female shoes after Ball" />
                         <PhotoCard src={hobby6} title="Caspian Sea" />
-                    </div>
-
-                    <div className="block Doc-photo-block">
                         <PhotoCard src={hobby7} title="Birthday Cake for my Mom" />
                         <PhotoCard src={hobby8} title="Van Gogh Sunflowers Cake" />
                         <PhotoCard src={hobby9} title="8th March Cake with Tulips" />

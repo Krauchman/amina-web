@@ -4,6 +4,8 @@
     justify-items: start;
     align-items: center;
 
+    gap: 2em;
+
     font-family: 'Epilogue', sans-serif;
     color: #2D2D2D;
 
@@ -23,19 +25,14 @@
     font-size: 1.5em;
 
     width: 75%;
-
-    padding-top: 0.5em;
-    padding-bottom: 1em;
 }
 
 .UX-Designer {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3.5vw;
+    line-height: 1.5em;
 
     width: 75%;
-
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
 }
 
 .Why {
@@ -44,12 +41,26 @@
 
     width: 75%;
 
-    padding-top: 2.5em;
-    padding-bottom: 0.5em;
-
     line-height: 1.5em;
 }
 
 .Blue {
     color: #0A34A4;
+}
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+
+    .Hello {
+        width: 90%;
+    }
+
+    .UX-Designer {
+        width: 90%;
+        font-size: 1.9em;
+    }
+
+    .Why {
+        width: 90%;
+    }
 }

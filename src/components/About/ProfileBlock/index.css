@@ -24,6 +24,8 @@
     align-items: center;
 
     gap: 4em;
+
+    flex-wrap: wrap;
 }
 
 .Profile-bio {

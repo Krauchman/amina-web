@@ -7,12 +7,8 @@ export function Intro() {
                 Hello, I’m Amina!
             </div>
             <div className="UX-Designer">
-                <span className="Blue">UX designer</span> crafting products that
-            </div>
-            <div className="UX-Designer">
-                connect <span className="Blue">people</span> together with
-            </div>
-            <div className="UX-Designer">
+                <span className="Blue">UX designer</span> crafting products that <br />
+                connect <span className="Blue">people</span> together with <br />
                 emerging <span className="Blue">technologies</span>
             </div>
             <div className="Why">

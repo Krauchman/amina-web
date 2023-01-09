@@ -15,7 +15,7 @@
 .Doc {
     display: grid;
     grid-template-columns: [col] 40% [col] 60% [col];
-    grid-template-rows: [row] 200px [row] auto [row];
+    grid-template-rows: [row] auto [row] auto [row];
 
     width: 75vw;
     max-width: 900px;
@@ -26,7 +26,7 @@
 .Doc img {
     object-fit: cover;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .Doc-cell {
@@ -36,6 +36,21 @@
 .Doc-header-left {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+
+    position: relative;
+}
+
+.Doc-header-left-img {
+    position: absolute;
+}
+
+.Doc-header-left-extra-img-container {
+    position: absolute;
+
+    bottom: 5%;
+    left: 5%;
+
+    width: 30%;
 }
 
 .Doc-header-right {
@@ -53,6 +68,9 @@
 
     padding-left: 1.5em;
     padding-right: 1.5em;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .Doc-body {
@@ -100,12 +118,15 @@
 
     padding-top: 0.7em;
     padding-bottom: 0.7em;
+
+    flex-wrap: wrap;
 }
 
 .Photo-Card {
-    flex: 1;
+    flex: 0.33;
 
     height: 250px;
+    min-width: 250px;
 
     display: grid;
     grid-template-columns: [col] 100% [col];
@@ -138,4 +159,31 @@
 
     width: 100%;
     min-height: 100%;
+}
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+
+    .Doc {
+        display: grid;
+        grid-template-columns: [col] 100% [col];
+        grid-template-rows: [row] 200px [row] auto [row] auto [row];
+
+        width: 100%;
+    }
+
+    .Doc-header-left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .Doc-header-right {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .Doc-body {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
 }

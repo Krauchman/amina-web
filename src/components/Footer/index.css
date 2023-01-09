@@ -46,3 +46,15 @@
     width: 20vw;
     min-width: 10em;
 }
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+
+    .Footer-container {
+        flex-direction: column;
+        gap: 2em;
+
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}

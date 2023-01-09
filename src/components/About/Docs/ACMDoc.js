@@ -1,5 +1,6 @@
 import "./index.css";
 import ACMHeader from "./photos/acm_header.png"
+import ACMHeaderLogos from "./photos/acm_header_logos.png"
 import { PhotoCard } from "./PhotoCard";
 
 import inst_before from "./photos/inst_before.png";
@@ -15,7 +16,10 @@ export function ACMDoc() {
         <div className="Doc-container">
             <div className="Doc">
                 <div className="Doc-cell Doc-header-left">
-                    <img src={ACMHeader} alt="ACM <3" />
+                    <img src={ACMHeader} alt="ACM <3" className="Doc-header-left-img" />
+                    <div className="Doc-header-left-extra-img-container">
+                        <img src={ACMHeaderLogos} alt="ACM <3" />
+                    </div>
                 </div>
 
                 <div className="Doc-cell Doc-header-right">

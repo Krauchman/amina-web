@@ -20,7 +20,7 @@ export function NavBar() {
                     </Link>
                 </div>
                 <div className="NavBar-link">
-                    <Link to="/work" className="link">
+                    <Link to="/" className="link">
                         Work
                     </Link>
                 </div>

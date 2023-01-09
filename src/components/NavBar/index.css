@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -12,21 +12,13 @@
 .NavBar-links {
     display: flex;
     justify-content: right;
+    gap: 3em;
 }
 
 .NavBar-link {
     display: flex;
     justify-content: center;
-
-    padding-left: 2em;
-    padding-right: 2em;
-
     font-size: 1.1em;
-}
-
-.NavBar-logo-container {
-    padding-left: 2em;
-    padding-right: 2em;
 }
 
 .NavBar-logo {
