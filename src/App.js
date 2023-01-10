@@ -2,15 +2,13 @@ import "./App.css";
 import * as React from "react";
 import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-router-dom";
 
-import { Home } from "./components";
-import { NavBar } from "./components";
-import { Footer } from "./components";
-import { About } from "./components";
+import { Home, NavBar, Footer, About, ScrollToTop } from "./components";
 
 export default function App() {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
