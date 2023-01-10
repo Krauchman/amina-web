@@ -13,6 +13,10 @@ html {
   text-decoration: underline;
 }
 
+.no-hover-underline:hover {
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }

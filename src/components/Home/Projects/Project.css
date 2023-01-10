@@ -19,7 +19,9 @@
 
     border: 1px solid black;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: [left] 3em [left-pad] 3fr [text-end] 2fr [mid] 5fr [right-pad] 3em [right];
+    grid-template-rows: [top] 3em [top-pad] 1fr [bottom-pad] 3em [bottom];
 
     color: black;
 
@@ -29,53 +31,43 @@
 }
 
 .Project-text-container {
-    width: 50%;
+    grid-column: left-pad / text-end;
+    grid-row: top-pad / bottom-pad;
+
+    min-width: 200px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1em;
 
-    padding-left: 7em;
+    padding-left: 3em;
 }
 
 .Project-image-container {
-    width: 50%;
-
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    padding-right: 3em;
+    grid-column: mid / right-pad;
+    grid-row: top-pad / bottom-pad;
 }
 
 .Project-image {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .Project-name {
-    width: 60%;
-
     font-size: 1.7em;
     font-weight: 600;
-
-    padding-bottom: 0.3em;
 }
 
 .Project-description {
-    width: 60%;
-
     font-size: 1.1em;
     font-weight: 400;
     line-height: 1.5em;
-
-    padding-top: 0.3em;
 }
 
 .Hover {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    grid-column: left / right;
+    grid-row: top / bottom;
 
     background-color: #bfd1f1;
 
@@ -87,7 +79,14 @@
     align-items: center;
     justify-content: center;
 
-    color: #081837
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    color: #081837;
+
+    z-index: 1;
 }
 
 .Project:hover .Hover {
@@ -124,4 +123,70 @@
 
 .Hover-cat {
     fill: #081837;
+}
+
+.Project-link {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .Hover-name {
+        font-size: 2.7em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+
+    .Project {
+        width: 90%;
+
+        display: grid;
+        grid-template-columns: [left] 2em [left-pad] 1fr [right-pad] 2em [right];
+        grid-template-rows: [top] 2em [top-pad] auto [image-end] auto [text-end] auto [bottom-pad] 2em [bottom];
+    }
+
+    .Project-image-container {
+        max-height: 250px;
+
+        grid-column: left-pad / right-pad;
+        grid-row: top-pad / image-end;
+    }
+
+    .Project-text-container {
+        grid-column: left-pad / right-pad;
+        grid-row: image-end / text-end;
+
+        padding-left: 0;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .Hover {
+        display: none;
+        z-index: -1;
+    }
+
+    .Project-link {
+        grid-column: left-pad / right-pad;
+        grid-row: text-end / bottom-pad;
+
+        display: flex;
+        justify-content: center;
+
+        font-weight: 600;
+        font-size: 1.2em;
+
+        border: 2px solid #081837;
+
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+    }
+
+    .Project-link:hover {
+        background-color: black;
+        color: #FFFFFF;
+    }
 }

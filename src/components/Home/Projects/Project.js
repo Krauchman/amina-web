@@ -2,6 +2,8 @@ import "./Project.css";
 import placeholder from './placeholder.png';
 import Cat from './cat.svg';
 
+import { Link } from "react-router-dom";
+
 export function Project(props) {
     const name = props.name
     const description = props.description
@@ -20,15 +22,18 @@ export function Project(props) {
                 <div className="Project-image-container">
                     <img className="Project-image" alt={name} src={placeholder} />
                 </div>
+                <Link to="/about" className="Project-link link no-hover-underline">
+                    View Full Project
+                </Link>
 
                 {/* ON HOVER */}
                 <div className="Hover">
                     <div className="Hover-name">
                         {name}
                     </div>
-                    <div className="Hover-link">
+                    <Link to="/about" className="Hover-link link no-hover-underline">
                         View Full Project
-                    </div>
+                    </Link>
                     <img src={Cat} className="Hover-cat" alt="meow" />
                 </div>
 
