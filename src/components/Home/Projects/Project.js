@@ -22,7 +22,7 @@ export function Project(props) {
                 <div className="Project-image-container">
                     <img className="Project-image" alt={name} src={placeholder} />
                 </div>
-                <Link to="/about" className="Project-link link no-hover-underline">
+                <Link to={props.link_to} className="Project-link link no-hover-underline">
                     View Full Project
                 </Link>
 
@@ -31,7 +31,7 @@ export function Project(props) {
                     <div className="Hover-name">
                         {name}
                     </div>
-                    <Link to="/about" className="Hover-link link no-hover-underline">
+                    <Link to={props.link_to} className="Hover-link link no-hover-underline">
                         View Full Project
                     </Link>
                     <img src={Cat} className="Hover-cat" alt="meow" />

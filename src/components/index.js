@@ -3,3 +3,4 @@ export { NavBar } from "./NavBar";
 export { Footer } from "./Footer";
 export { About } from "./About";
 export { ScrollToTop } from "./ScrollToTop";
+export { AULAProject } from "./Project";

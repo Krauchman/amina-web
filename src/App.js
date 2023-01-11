@@ -2,7 +2,7 @@ import "./App.css";
 import * as React from "react";
 import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-router-dom";
 
-import { Home, NavBar, Footer, About, ScrollToTop } from "./components";
+import { Home, NavBar, Footer, About, ScrollToTop, AULAProject } from "./components";
 
 export default function App() {
   return (
@@ -12,7 +12,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+
             <Route path="about" element={<About />} />
+
+            <Route path="projects">
+              <Route path="aula" element={<AULAProject />} />
+            </Route>
 
             <Route path="*" element={<NoMatch />} />
           </Route>

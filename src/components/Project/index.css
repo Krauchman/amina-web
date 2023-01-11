@@ -1,0 +1,259 @@
+.ProjectPage {
+    font-family: 'Epilogue', sans-serif;
+    color: #2D2D2D;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.ProjectPage .Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3em;
+
+    height: 50vh;
+
+    background-color: #C3EFD0;
+}
+
+.ProjectPage .Banner img {
+    height: 100%;
+    max-width: 100%;
+
+    object-fit: contain;
+}
+
+.ProjectPage .Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #FFFFFF;
+
+    gap: 3em;
+
+    padding-bottom: 5em;
+}
+
+.ProjectPage .Section {
+    width: 70%;
+    padding-bottom: 3em;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjectPage .Header {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: [left] 1fr [col] 1fr [col] 1fr [right];
+    grid-template-rows: [top] auto [title] auto [headings] auto [bottom];
+}
+
+.ProjectPage .Header .Title {
+    grid-column: left / right;
+    grid-row: top / title;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 4em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ProjectPage .Header .Timeline {
+    grid-column: left / 2;
+    grid-row: title / headings;
+
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #6A6A6A;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ProjectPage .Header .Responsabilities {
+    grid-column: 2 / 3;
+    grid-row: title / headings;
+
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #6A6A6A;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ProjectPage .Header .Tools {
+    grid-column: 3 / right;
+    grid-row: title / headings;
+
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #6A6A6A;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ProjectPage .Header .Timeline-content {
+    grid-column: left / 2;
+    grid-row: headings / bottom;
+
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #6A6A6A;
+    line-height: 1.2em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ProjectPage .Header .Responsabilities-content {
+    grid-column: 2 / 3;
+    grid-row: headings / bottom;
+
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #6A6A6A;
+    line-height: 1.2em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ProjectPage .Header .Tools-content {
+    grid-column: 3 / right;
+    grid-row: headings / bottom;
+
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #6A6A6A;
+    line-height: 1.2em;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ProjectPage .Section h1 {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.ProjectPage .Section h2 {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.ProjectPage .Section p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+.ProjectPage .Section .Special-h2 {
+    display: grid;
+    grid-template-columns: [left] 1fr [right];
+    grid-template-rows: [top] 1fr [bottom];
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.ProjectPage .Section .Special-h2 h2 {
+    grid-column: left / right;
+    grid-row: top / bottom;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-weight: 600;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    z-index: 1;
+}
+
+.ProjectPage .Section .Special-h2 .background-text {
+    grid-column: left / right;
+    grid-row: top / bottom;
+
+    display: flex;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 13em;
+
+    opacity: 0.15;
+
+    padding-top: 0.2em;
+
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+
+    .ProjectPage .Header {
+        grid-template-rows: [top] auto [title] auto [heading] auto [content] auto [heading] auto [content] auto [heading] auto [bottom];
+    }
+
+    .ProjectPage .Header .Timeline {
+        grid-column: left / right;
+        grid-row: title / heading 1;
+
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .ProjectPage .Header .Timeline-content {
+        grid-column: left / right;
+        grid-row: heading 1 / content 1;
+
+        padding-bottom: 2.5em;
+    }
+
+    .ProjectPage .Header .Responsabilities {
+        grid-column: left / right;
+        grid-row: content 1 / heading 2;
+
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .ProjectPage .Header .Responsabilities-content {
+        grid-column: left / right;
+        grid-row: heading 2 / content 2;
+
+        padding-bottom: 2.5em;
+    }
+
+    .ProjectPage .Header .Tools {
+        grid-column: left / right;
+        grid-row: content 2 / heading 3;
+
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .ProjectPage .Header .Tools-content {
+        grid-column: left / right;
+        grid-row: heading 3 / bottom;
+    }
+}

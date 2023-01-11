@@ -9,16 +9,19 @@ export function Projects() {
             <Project
                 name="AULA"
                 description="Designed some empty state screens in kawaii style for the popular sheepify app"
+                link_to="projects/aula"
             />
 
             <Project
                 name="ZHULDYZ ZHORAMAL"
                 description="Designed some empty state screens in kawaii style for the popular sheepify app"
+                link_to="projects/zhuldyz-zhoramal"
             />
 
             <Project
                 name="QAZAQ REPUBLIC"
                 description="Designed some empty state screens in kawaii style for the popular sheepify app "
+                link_to="projects/qazaq-republic"
             />
 
         </div>
