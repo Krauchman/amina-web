@@ -38,7 +38,7 @@
 }
 
 .ProjectPage .Section {
-    width: 70%;
+    width: 75%;
     padding-bottom: 3em;
     border-bottom: 1px solid black;
 
@@ -79,6 +79,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 1em;
 }
 
 .ProjectPage .Header .Responsabilities {
@@ -91,6 +92,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 1em;
 }
 
 .ProjectPage .Header .Tools {
@@ -116,6 +118,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 1em;
 }
 
 .ProjectPage .Header .Responsabilities-content {
@@ -129,6 +132,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 1em;
 }
 
 .ProjectPage .Header .Tools-content {
@@ -207,6 +211,13 @@
     z-index: 0;
 }
 
+.ProjectPage .Section img {
+    width: 100%;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 @media (max-width: 768px) {
     /* For mobile phones: */
 
@@ -255,5 +266,9 @@
     .ProjectPage .Header .Tools-content {
         grid-column: left / right;
         grid-row: heading 3 / bottom;
+    }
+
+    .ProjectPage .Section {
+        width: 90%;
     }
 }

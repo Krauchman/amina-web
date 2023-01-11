@@ -2,6 +2,10 @@ import "./index.css";
 
 import aula_banner from "./media/aula/banner.png";
 
+import solution1 from "./media/aula/solution1.png"
+import solution2 from "./media/aula/solution2.png"
+import solution3 from "./media/aula/solution3.png"
+
 
 export function AULAProject() {
     return (
@@ -48,6 +52,16 @@ export function AULAProject() {
                     </div>
 
                     <p>AULA has 2 products: AULA.KZ for occupants and AULA PRO for property managers. Both of them had unique and usable functionality but they didn’t take into account which of their features are mostly and barely used by the customers. Also, they didn’t consider which information on the particular page had more importance that another. These issues </p>
+                </div>
+
+                <div className="Section">
+                    <h1>SOLUTION</h1>
+
+                    <img src={solution1} alt="Tracking service requests" />
+
+                    <img src={solution2} alt="Database on occupants at a glance" />
+
+                    <img src={solution3} alt="Track and manage service requests" />
                 </div>
 
             </div>
