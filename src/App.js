@@ -1,28 +1,39 @@
 import "./App.css";
 import * as React from "react";
-import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link, useLocation } from "react-router-dom";
+
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import { Home, NavBar, Footer, About, ScrollToTop, AULAProject } from "./components";
 
 export default function App() {
+  let location = useLocation();
+
   return (
     <div>
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
 
-            <Route path="about" element={<About />} />
+      <ScrollToTop />
 
-            <Route path="projects">
-              <Route path="aula" element={<AULAProject />} />
+      <TransitionGroup component={null}>
+        <CSSTransition key={location.key} classNames="fade" timeout={1000}>
+
+          < Routes location={location} >
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+
+              <Route path="about" element={<About />} />
+
+              <Route path="projects">
+                <Route path="aula" element={<AULAProject />} />
+              </Route>
+
+              <Route path="*" element={<NoMatch />} />
             </Route>
+          </Routes >
 
-            <Route path="*" element={<NoMatch />} />
-          </Route>
-        </Routes>
-      </Router>
+        </CSSTransition>
+      </TransitionGroup>
+
     </div>
   );
 }
