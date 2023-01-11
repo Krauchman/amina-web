@@ -2,7 +2,7 @@
     font-family: 'Epilogue', sans-serif;
     color: #2D2D2D;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .ProjectPage .Banner {
@@ -50,7 +50,7 @@
     width: 100%;
 
     display: grid;
-    grid-template-columns: [left] 1fr [col] 1fr [col] 1fr [right];
+    grid-template-columns: [left] 1fr [col] 1fr [col] 0.7fr [right];
     grid-template-rows: [top] auto [title] auto [headings] auto [bottom];
 }
 
@@ -79,7 +79,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .ProjectPage .Header .Responsabilities {
@@ -92,7 +92,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .ProjectPage .Header .Tools {
@@ -118,7 +118,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .ProjectPage .Header .Responsabilities-content {
@@ -132,7 +132,7 @@
 
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .ProjectPage .Header .Tools-content {
