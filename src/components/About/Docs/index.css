@@ -161,6 +161,12 @@
     min-height: 100%;
 }
 
+.Doc .link {
+    color: #2D2D2D;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     /* For mobile phones: */
 

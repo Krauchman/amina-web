@@ -54,7 +54,9 @@ export function ACMDoc() {
 
                     <h1 className="block">Hackathon with Google as a main sponsor and over 600 applications</h1>
 
-                    <p className="block">The main annual event of ACM-SC is the Hackathon, HackNU. This HackNU was 5th in a row and always gathered over 300 participants each year since 2017. HackNU/2022 was no exception, we even beat the last year’s record of 450 applications. Students from other Kazakhstan cities flew to our University to participate in our Hackathon. It was no surprise because the main sponsor was Google. I took the role of main organizer who managed the whole organization process.</p>
+                    <p className="block">
+                        The main annual event of ACM-SC is the Hackathon, HackNU. This HackNU was 5th in a row and always gathered over 300 participants each year since 2017. HackNU/2022 was no exception, we even beat the last year’s record of 450 applications. Students from other Kazakhstan cities flew to our University to participate in our Hackathon. It was no surprise because the main sponsor was Google. I took the role of main organizer who managed the whole organization process. <a className="link" target="_blank" rel="noopener noreferrer" href="https://weproject.media/articles/detail/v-astane-proshel-pyatyy-nu-hackathon-kak-my-ego-zapomnim/">You can check out more about HackNU here!</a>
+                    </p>
 
                 </div>
 
