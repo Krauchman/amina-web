@@ -1,4 +1,5 @@
 import "./App.css";
+
 import * as React from "react";
 import { Routes, Route, Outlet, Link, useLocation } from "react-router-dom";
 
@@ -7,6 +8,8 @@ import { createRef } from 'react'
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 import { Home, NavBar, Footer, About, AULAProject } from "./components";
+
+import { Helmet } from "react-helmet";
 
 
 const routes = [
@@ -25,6 +28,10 @@ export default function App() {
 
   return (
     <div>
+
+      <Helmet>
+        <meta name="description" content="Amina Alen portfolio" />
+      </Helmet>
 
       <SwitchTransition>
         <CSSTransition

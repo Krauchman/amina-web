@@ -1,4 +1,5 @@
 import "./index.css";
+import { Helmet } from "react-helmet";
 
 import aula_banner from "./media/aula/banner.png";
 
@@ -6,10 +7,13 @@ import solution1 from "./media/aula/solution1.png"
 import solution2 from "./media/aula/solution2.png"
 import solution3 from "./media/aula/solution3.png"
 
-
 export function AULAProject() {
     return (
         <div className="ProjectPage">
+
+            <Helmet>
+                <title>AULA</title>
+            </Helmet>
 
             <div className="Banner">
                 <img src={aula_banner} alt="AULA" />
