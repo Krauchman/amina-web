@@ -10,11 +10,11 @@ html {
 }
 
 .link:hover {
-  text-decoration: underline;
+  opacity: 0.6;
 }
 
-.no-hover-underline:hover {
-  text-decoration: none;
+.no-hover-effect:hover {
+  opacity: 1;
 }
 
 .App {

@@ -25,7 +25,10 @@
     width: 3em;
 }
 
-.NavBar .active {
+.NavBar-link .active {
     font-weight: 600;
-    text-decoration: underline;
+}
+
+.NavBar-link .active:hover {
+    opacity: 1;
 }
