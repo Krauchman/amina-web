@@ -48,7 +48,7 @@ export default function App() {
               <Route path="/" element={<Layout />}>
 
                 {routes.map((route) => (
-                  <Route path={route.path} element={route.element} />
+                  <Route key={route.path} path={route.path} element={route.element} />
                 ))}
 
                 <Route path="*" element={<NoMatch />} />

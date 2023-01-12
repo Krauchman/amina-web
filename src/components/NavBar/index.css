@@ -24,3 +24,8 @@
 .NavBar-logo {
     width: 3em;
 }
+
+.NavBar .active {
+    font-weight: 600;
+    text-decoration: underline;
+}
