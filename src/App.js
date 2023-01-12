@@ -2,39 +2,65 @@ import "./App.css";
 import * as React from "react";
 import { Routes, Route, Outlet, Link, useLocation } from "react-router-dom";
 
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { createRef } from 'react'
 
-import { Home, NavBar, Footer, About, ScrollToTop, AULAProject } from "./components";
+import { SwitchTransition, CSSTransition } from "react-transition-group";
+
+import { Home, NavBar, Footer, About, AULAProject } from "./components";
+
+
+const routes = [
+  { path: '/', element: <Home />, nodeRef: createRef() },
+  { path: '/about', element: <About />, nodeRef: createRef() },
+  { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
+]
+
+const noMatchRef = createRef()
+
 
 export default function App() {
-  let location = useLocation();
+  const location = useLocation();
+  const { nodeRef } =
+    routes.find((route) => route.path === location.pathname) ?? { nodeRef: noMatchRef }
 
   return (
     <div>
 
-      <ScrollToTop />
+      <SwitchTransition>
+        <CSSTransition
+          key={location.pathname}
+          classNames="fade"
+          nodeRef={nodeRef}
+          timeout={350}
+          unmountOnExit
+          appear
 
-      <TransitionGroup component={null}>
-        <CSSTransition key={location.key} classNames="fade" timeout={1000}>
+          onEnter={_ => {
+            document.documentElement.scrollTo({
+              top: 0,
+              left: 0,
+            });
+          }}
+        >
+          <div ref={nodeRef}>
 
-          < Routes location={location} >
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
+            < Routes location={location} >
+              <Route path="/" element={<Layout />}>
 
-              <Route path="about" element={<About />} />
+                {routes.map((route) => (
+                  <Route path={route.path} element={route.element} />
+                ))}
 
-              <Route path="projects">
-                <Route path="aula" element={<AULAProject />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
+            </Routes >
 
-              <Route path="*" element={<NoMatch />} />
-            </Route>
-          </Routes >
+          </div>
 
         </CSSTransition>
-      </TransitionGroup>
+      </SwitchTransition>
 
-    </div>
+    </div >
   );
 }
 

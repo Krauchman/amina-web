@@ -73,17 +73,19 @@ html {
 
 /* Transition animation */
 
-.fade-enter {
+.fade-enter,
+.fade-appear {
   opacity: 0;
-  transform: translate(0, 25px);
+  transform: translate(0, 10px);
   z-index: 1;
 }
 
-.fade-enter.fade-enter-active {
+.fade-enter-active,
+.fade-appear-active {
   opacity: 1;
   transform: translate(0, 0);
 
-  transition: opacity 700ms ease-out, transform 800ms ease;
+  transition: opacity 300ms ease-out, transform 300ms ease;
 }
 
 .fade-exit {
@@ -91,9 +93,9 @@ html {
   transform: translate(0, 0);
 }
 
-.fade-exit.fade-exit-active {
+.fade-exit-active {
   opacity: 0;
-  transform: translate(0, 30px);
+  transform: translate(0, 10px);
 
-  transition: opacity 300ms ease-out, transform 400ms ease;
+  transition: opacity 300ms ease-out, transform 300ms ease;
 }
