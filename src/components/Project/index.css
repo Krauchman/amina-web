@@ -221,6 +221,11 @@
 @media (max-width: 768px) {
     /* For mobile phones: */
 
+    .ProjectPage .Banner {
+        height: 30vh;
+        padding: 1.5em;
+    }
+
     .ProjectPage .Header {
         grid-template-rows: [top] auto [title] auto [heading] auto [content] auto [heading] auto [content] auto [heading] auto [bottom];
     }
