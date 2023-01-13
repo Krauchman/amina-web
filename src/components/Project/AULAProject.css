@@ -51,4 +51,28 @@
     .AULAProject .shift-up {
         transform: translate(0, -60px);
     }
+
+    @keyframes appear-up {
+        from {
+            opacity: 0;
+            transform: translate(0, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(0, -60px);
+        }
+    }
+
+    @keyframes appear-down {
+        from {
+            opacity: 0;
+            transform: translate(0, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(0, 60px);
+        }
+    }
 }
