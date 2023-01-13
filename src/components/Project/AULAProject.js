@@ -46,9 +46,9 @@ export function AULAProject() {
                 <div className="Section">
                     <h1>CONTEXT</h1>
 
-                    <h2>Digitalizing bureaucratic processes for property management companies through a centralized CRM system</h2>
+                    <h2>Creation of digital ecosystem around house </h2>
 
-                    <p>Processing and storing large amount of data on occupants, interaction between them and property management companies requires powerful software to effectively perform these tasks. And the same can be said about the user experience of such CRM system. My mission was to reconstruct existing user scenarios to align them to real user needs</p>
+                    <p>Modern residential buildings locate on average {'>'}2000 families which makes it challenging and almost impossible to control all service-communal processes. AULA KZ provides solution to this problem through a centralized CRM system which connects residents with each other and with property management companies for effective and fast communication on various questions.</p>
                 </div>
 
                 <div className="Section">
@@ -59,20 +59,20 @@ export function AULAProject() {
                         style={{ color: "#3BA276" }}
                     >
                         <div className="background-text">?</div>
-                        <h2>How might we improve existing UX & UI to create a more unified digital ecosystem around house?</h2>
+                        <h2>How might we improve UX for better user onboarding and higher retention? </h2>
                     </div>
 
-                    <p>AULA has 2 products: AULA.KZ for occupants and AULA PRO for property managers. Both of them had unique and usable functionality but they didn’t take into account which of their features are mostly and barely used by the customers. Also, they didn’t consider which information on the particular page had more importance that another. These issues </p>
+                    <p>I was given two main goals for redesign of the app: (1) to make faster onboarding for new users who are massively downloading our app and (2) to increase the retention of existing and new users. Previous app was used only for 1-2 features once or twice a week. I hypothesized it was caused by poor onboarding and the lack of additional features that would require everyday use.</p>
                 </div>
 
                 <div className="Section">
                     <h1>SOLUTION</h1>
 
-                    <img src={solution1} alt="Tracking service requests" />
+                    <img src={solution1} alt="Main page instead of news feed" />
 
-                    <img src={solution2} alt="Database on occupants at a glance" />
+                    <img src={solution2} alt="QR scan to open door" />
 
-                    <img src={solution3} alt="Track and manage service requests" />
+                    <img src={solution3} alt="Bottom navigation" />
                 </div>
 
             </div>
