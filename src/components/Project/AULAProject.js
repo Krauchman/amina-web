@@ -1,7 +1,11 @@
 import "./index.css";
+import "./AULAProject.css";
 import { Helmet } from "react-helmet";
 
-import aula_banner from "./media/aula/banner.png";
+import aula_banner1 from "./media/aula/banner1.png";
+import aula_banner2 from "./media/aula/banner2.png";
+import aula_banner3 from "./media/aula/banner3.png";
+import aula_banner4 from "./media/aula/banner4.png";
 
 import solution1 from "./media/aula/solution1.png"
 import solution2 from "./media/aula/solution2.png"
@@ -9,14 +13,17 @@ import solution3 from "./media/aula/solution3.png"
 
 export function AULAProject() {
     return (
-        <div className="ProjectPage">
+        <div className="ProjectPage AULAProject">
 
             <Helmet>
                 <title>AULA</title>
             </Helmet>
 
             <div className="Banner">
-                <img src={aula_banner} alt="AULA" />
+                <img src={aula_banner1} alt="AULA" className="shift-down" />
+                <img src={aula_banner2} alt="AULA" className="shift-up" />
+                <img src={aula_banner3} alt="AULA" className="shift-down" />
+                <img src={aula_banner4} alt="AULA" className="shift-up" />
             </div >
 
             <div className="Content">
