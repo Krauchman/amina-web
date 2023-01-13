@@ -68,11 +68,11 @@ export function AULAProject() {
                 <div className="Section">
                     <h1>SOLUTION</h1>
 
-                    <img src={solution1} alt="Main page instead of news feed" />
+                    <img src={solution1} alt="Main page instead of news feed" loading="lazy" />
 
-                    <img src={solution2} alt="QR scan to open door" />
+                    <img src={solution2} alt="QR scan to open door" loading="lazy" />
 
-                    <img src={solution3} alt="Bottom navigation" />
+                    <img src={solution3} alt="Bottom navigation" loading="lazy" />
                 </div>
 
             </div>
