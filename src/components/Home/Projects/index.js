@@ -9,8 +9,8 @@ export function Projects() {
         <div className="Projects-container">
 
             <Project
-                name="AULA"
-                description="Designed some empty state screens in kawaii style for the popular sheepify app"
+                name="AULA.KZ"
+                description="AULA KZ provides solution to this problem through a centralized CRM system which connects residents with each other and with property management companies for effective and fast communication on various questions."
                 link_to="projects/aula"
                 src={aulakz}
             />
