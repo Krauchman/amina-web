@@ -45,8 +45,8 @@
 }
 
 .Project-image-container {
-    grid-column: mid / right-pad;
-    grid-row: top-pad / bottom-pad;
+    grid-column: mid / right;
+    grid-row: top / bottom;
 }
 
 .Project-image {

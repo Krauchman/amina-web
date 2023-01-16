@@ -170,6 +170,20 @@
     line-height: 1.8em;
 }
 
+.ProjectPage .Section b {
+    font-weight: 600;
+}
+
+.ProjectPage .Section .highlight {
+    background-color: #E2F1EA;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 .ProjectPage .Section .Special-h2 {
     display: grid;
     grid-template-columns: [left] 1fr [right];

@@ -20,7 +20,7 @@ export function Project(props) {
                     </div>
                 </div>
                 <div className="Project-image-container">
-                    <img className="Project-image" alt={name} src={placeholder} />
+                    <img className="Project-image" alt={name} src={props?.src || placeholder} />
                 </div>
                 <Link to={props.link_to} className="Project-link link no-hover-effect">
                     View Full Project

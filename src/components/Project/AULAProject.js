@@ -11,6 +11,16 @@ import solution1 from "./media/aula/solution1.png"
 import solution2 from "./media/aula/solution2.png"
 import solution3 from "./media/aula/solution3.png"
 
+import myapproach from "./media/aula/myapproach.png"
+
+import affinitymap from "./media/aula/affinitymap.png"
+
+import wireframingmainmenu from "./media/aula/wireframingmainmenu.png"
+
+import finaldesign1 from "./media/aula/finaldesign1.png"
+import finaldesign2 from "./media/aula/finaldesign2.png"
+import finaldesign3 from "./media/aula/finaldesign3.png"
+
 export function AULAProject() {
     return (
         <div className="ProjectPage AULAProject">
@@ -68,11 +78,111 @@ export function AULAProject() {
                 <div className="Section">
                     <h1>SOLUTION</h1>
 
-                    <img src={solution1} alt="Main page instead of news feed" loading="lazy" />
+                    <img src={solution1} alt="Main page menu as a secondary navigation" loading="lazy" />
 
                     <img src={solution2} alt="QR scan to open door" loading="lazy" />
 
                     <img src={solution3} alt="Bottom navigation" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>MY APPROACH</h1>
+
+                    <img src={myapproach} alt="My Approach" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>01 DEFINE</h1>
+
+                    <h2>Main Page vs News feed</h2>
+
+                    <p>
+                        When the AULA.KZ just launched it introduced itself as a <b>“social media”</b> for residents where they can post announcements, advertisement, ask questions and etc. That’s why the main page was designed as a news feed where all posts were allocated. <b>However this concept wasn’t viable since almost none of the residents ever posted something.</b> This situation left me with 2 hypotheses which I needed to check:
+                        <ol>
+                            <b>
+                                <li>
+                                    Residents don’t post anything because they have another platform for this with better experience;
+                                </li>
+                                <li>
+                                    New users get confused and unwelcomed when they first open the app since the news feed page is always empty which leaves the feeling that “nobody is using this app”
+                                </li>
+                            </b>
+                        </ol>
+                    </p>
+
+                    <p>To check my hypotheses I interviewed existing users and new ones.</p>
+                    <br />
+                    <br />
+
+                    <h1>02 RESEARCH</h1>
+
+                    <h2>Affinity Map based on User Interview</h2>
+
+                    <img src={affinitymap} alt="Affinity Map based on User Interview" loading="lazy" />
+
+                    <h2>Research Results Analysis</h2>
+
+                    <p>
+                        My two hypotheses were verified:
+                        <ol>
+                            <b>
+                                <li>
+                                    Residents don’t post anything because they have another platform for this with better experience;
+                                </li>
+                                <li>
+                                    New users get confused and unwelcomed when they first open the app since the news feed page is always empty which leaves the feeling that “nobody is using this app”
+                                </li>
+                            </b>
+                        </ol>
+                    </p>
+
+                    <p>
+                        User interviews brought valuable insights on how some parts of the app can be redesigned. Now I had possible directions I can follow while sketching draft wireframes:
+                        <ul className="highlight">
+                            <li>
+                                <b>Introduction of primary and secondary navigation to highlight important pages.</b> This could be done by switching to bottom navigation bar (previously it was hamburger menu with all pages) where important pages will be shown, and redesigning news feed to main menu page which will locate navigation to other pages;
+                            </li>
+                        </ul>
+                        <ul className="highlight">
+                            <li>
+                                <b>Main menu page can be designed in the form of a messaging apps with “chats view”.</b> By doing so new users will be get familiar with the interface which will ensure faster and more effective onboarding.
+                            </li>
+                        </ul>
+                    </p>
+
+                    <h2>Increasing retention rate</h2>
+
+                    <p>
+                        Mentioned above ideas can help for better onboarding and faster navigation in app. However, one more goal has to be covered: <b>increasing the retention rate.</b> To achieve this goal we brainstormed with the stakeholder and came up with 2 ideas:
+                        <ol>
+                            <li>
+                                Incorporating messaging feature. Residents can chat on various question via AULA.KZ instead of WhatsApp;
+                            </li>
+                            <li>
+                                Adding QR scanning system to open entrance doors and access parking zone. This idea was supported with property management companies and now all of them are using this system
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div className="Section">
+                    <h1>03 DESIGN</h1>
+
+                    <h2>Wireframing main menu page</h2>
+
+                    <img src={wireframingmainmenu} alt="Wireframing main menu page" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>FINAL DESIGNS</h1>
+
+                    <h2>3 major improvements in design</h2>
+
+                    <img src={finaldesign1} alt="Main menu instead of News feed" loading="lazy" />
+
+                    <img src={finaldesign2} alt="QR code to open door" loading="lazy" />
+
+                    <img src={finaldesign3} alt="Switching to bottom navigation" loading="lazy" />
                 </div>
 
             </div>
