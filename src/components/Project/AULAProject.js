@@ -100,17 +100,18 @@ export function AULAProject() {
 
                     <p>
                         When the AULA.KZ just launched it introduced itself as a <b>“social media”</b> for residents where they can post announcements, advertisement, ask questions and etc. That’s why the main page was designed as a news feed where all posts were allocated. <b>However this concept wasn’t viable since almost none of the residents ever posted something.</b> This situation left me with 2 hypotheses which I needed to check:
-                        <ol>
-                            <b>
-                                <li>
-                                    Residents don’t post anything because they have another platform for this with better experience;
-                                </li>
-                                <li>
-                                    New users get confused and unwelcomed when they first open the app since the news feed page is always empty which leaves the feeling that “nobody is using this app”
-                                </li>
-                            </b>
-                        </ol>
                     </p>
+
+                    <ol>
+                        <b>
+                            <li>
+                                Residents don’t post anything because they have another platform for this with better experience;
+                            </li>
+                            <li>
+                                New users get confused and unwelcomed when they first open the app since the news feed page is always empty which leaves the feeling that “nobody is using this app”
+                            </li>
+                        </b>
+                    </ol>
 
                     <p>To check my hypotheses I interviewed existing users and new ones.</p>
                     <br />
@@ -126,45 +127,48 @@ export function AULAProject() {
 
                     <p>
                         My two hypotheses were verified:
-                        <ol>
-                            <b>
-                                <li>
-                                    Residents don’t post anything because they have another platform for this with better experience;
-                                </li>
-                                <li>
-                                    New users get confused and unwelcomed when they first open the app since the news feed page is always empty which leaves the feeling that “nobody is using this app”
-                                </li>
-                            </b>
-                        </ol>
                     </p>
+
+                    <ol>
+                        <b>
+                            <li>
+                                Residents don’t post anything because they have another platform for this with better experience;
+                            </li>
+                            <li>
+                                New users get confused and unwelcomed when they first open the app since the news feed page is always empty which leaves the feeling that “nobody is using this app”
+                            </li>
+                        </b>
+                    </ol>
 
                     <p>
                         User interviews brought valuable insights on how some parts of the app can be redesigned. Now I had possible directions I can follow while sketching draft wireframes:
-                        <ul className="highlight">
-                            <li>
-                                <b>Introduction of primary and secondary navigation to highlight important pages.</b> This could be done by switching to bottom navigation bar (previously it was hamburger menu with all pages) where important pages will be shown, and redesigning news feed to main menu page which will locate navigation to other pages;
-                            </li>
-                        </ul>
-                        <ul className="highlight">
-                            <li>
-                                <b>Main menu page can be designed in the form of a messaging apps with “chats view”.</b> By doing so new users will be get familiar with the interface which will ensure faster and more effective onboarding.
-                            </li>
-                        </ul>
                     </p>
+
+                    <ul className="highlight">
+                        <li>
+                            <b>Introduction of primary and secondary navigation to highlight important pages.</b> This could be done by switching to bottom navigation bar (previously it was hamburger menu with all pages) where important pages will be shown, and redesigning news feed to main menu page which will locate navigation to other pages;
+                        </li>
+                    </ul>
+                    <ul className="highlight">
+                        <li>
+                            <b>Main menu page can be designed in the form of a messaging apps with “chats view”.</b> By doing so new users will be get familiar with the interface which will ensure faster and more effective onboarding.
+                        </li>
+                    </ul>
 
                     <h2>Increasing retention rate</h2>
 
                     <p>
                         Mentioned above ideas can help for better onboarding and faster navigation in app. However, one more goal has to be covered: <b>increasing the retention rate.</b> To achieve this goal we brainstormed with the stakeholder and came up with 2 ideas:
-                        <ol>
-                            <li>
-                                Incorporating messaging feature. Residents can chat on various question via AULA.KZ instead of WhatsApp;
-                            </li>
-                            <li>
-                                Adding QR scanning system to open entrance doors and access parking zone. This idea was supported with property management companies and now all of them are using this system
-                            </li>
-                        </ol>
                     </p>
+
+                    <ol>
+                        <li>
+                            Incorporating messaging feature. Residents can chat on various question via AULA.KZ instead of WhatsApp;
+                        </li>
+                        <li>
+                            Adding QR scanning system to open entrance doors and access parking zone. This idea was supported with property management companies and now all of them are using this system
+                        </li>
+                    </ol>
                 </div>
 
                 <div className="Section">
@@ -185,6 +189,28 @@ export function AULAProject() {
                     <img src={finaldesign2} alt="QR code to open door" loading="lazy" />
 
                     <img src={finaldesign3} alt="Switching to bottom navigation" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>REFLECTIONS</h1>
+
+                    <h2>Moment of truth</h2>
+
+                    <p>
+                        This was my first real-world commercial project which allowed me to test my UI and especially UX skills. My main discoveries include:
+                    </p>
+
+                    <ol>
+                        <li>
+                            <b>Despite from being usable, design should also be accessible.</b> Our users constituted of a diverse group of people some of which have small, low quality sensor screens. They might be using AULA.KZ in cases when only one hand is free or outside in the bright lightning. I had to consider such cases so that external factors wouldn’t lower the quality of user experience;
+                        </li>
+                        <li>
+                            <b>Final designs are actually never final.</b> They are final only for some amount of time because user needs might have slight changes or new technologies arise, that should be adapted into a design. Design process is iterative, and the more insights are gotten, the more polished user experience will be;
+                        </li>
+                        <li>
+                            <b>Not to build design based on assumptions of a stakeholder or a design team.</b> Only users can provide genuine insight on what they actually need. And my mission as a UX designer is too extract this information in the most effective way and apply it in design process.
+                        </li>
+                    </ol>
                 </div>
 
             </div>
