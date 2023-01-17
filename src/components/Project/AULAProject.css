@@ -1,15 +1,15 @@
 .AULAProject .shift-down {
-    transform: translate(0, 35px);
+    transform: translate(0, 3em);
 
     animation-name: appear-down;
-    animation-duration: 800ms;
+    animation-duration: 1000ms;
 }
 
 .AULAProject .shift-up {
-    transform: translate(0, -35px);
+    transform: translate(0, -3em);
 
     animation-name: appear-up;
-    animation-duration: 800ms;
+    animation-duration: 1000ms;
 }
 
 @keyframes appear-up {
@@ -20,7 +20,7 @@
 
     to {
         opacity: 1;
-        transform: translate(0, -35px);
+        transform: translate(0, -3em);
     }
 }
 
@@ -32,7 +32,7 @@
 
     to {
         opacity: 1;
-        transform: translate(0, 35px);
+        transform: translate(0, 3em);
     }
 }
 

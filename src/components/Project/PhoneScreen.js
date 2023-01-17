@@ -18,7 +18,7 @@ export function PhoneScreen({ src, alt, className }) {
 
     let containerStyle = { opacity: 1 };
     if (isLoading) {
-        containerStyle = { opacity: 0 };
+        containerStyle = { opacity: 0, display: "none" };
     }
 
     const onImageLoad = () => {
