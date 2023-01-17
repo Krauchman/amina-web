@@ -8,7 +8,7 @@
 }
 
 .PhoneScreen img {
-    transition: opacity 300ms ease-out;
+    transition: opacity 400ms ease-out;
     width: 230px;
 }
 

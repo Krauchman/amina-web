@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function PhoneScreenSkeleton() {
     return (
-        <Skeleton className="skeleton" />
+        <Skeleton className="skeleton" baseColor="#F1F2ED" highlightColor="white" />
     )
 }
 
@@ -18,7 +18,7 @@ export function PhoneScreen({ src, alt, className }) {
 
     let containerStyle = { opacity: 1 };
     if (isLoading) {
-        containerStyle = { opacity: 0, display: "none" };
+        containerStyle = { opacity: 0, position: "absolute" };
     }
 
     const onImageLoad = () => {
