@@ -16,15 +16,15 @@ export function Projects() {
             />
 
             <Project
-                name="ZHULDYZ ZHORAMAL"
-                description="Designed some empty state screens in kawaii style for the popular sheepify app"
-                link_to="projects/zhuldyz-zhoramal"
+                name="AULA PRO"
+                description="Connecting property management companies with residents for faster communication"
+                link_to="projects/aula-pro"
             />
 
             <Project
-                name="QAZAQ REPUBLIC"
-                description="Designed some empty state screens in kawaii style for the popular sheepify app "
-                link_to="projects/qazaq-republic"
+                name="ZHULDYZ ZHORAMAL"
+                description="Designed some empty state screens in kawaii style for the popular sheepify app"
+                link_to="projects/zhuldyz-zhoramal"
             />
 
         </div>

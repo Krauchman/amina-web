@@ -7,7 +7,7 @@ import { createRef } from 'react'
 
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-import { Home, NavBar, Footer, About, AULAProject } from "./components";
+import { Home, NavBar, Footer, About, AULAProject, AULAProProject } from "./components";
 
 import { Helmet } from "react-helmet";
 
@@ -16,6 +16,7 @@ const routes = [
   { path: '/', element: <Home />, nodeRef: createRef() },
   { path: '/about', element: <About />, nodeRef: createRef() },
   { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
+  { path: 'projects/aula-pro', element: <AULAProProject />, nodeRef: createRef() },
 ]
 
 const noMatchRef = createRef()
