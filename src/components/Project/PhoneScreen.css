@@ -1,0 +1,21 @@
+.PhoneScreen {
+    height: 100%;
+    max-width: 100%;
+
+    object-fit: cover;
+
+}
+
+.PhoneScreen img {
+    transition: opacity 300ms ease-out;
+}
+
+.PhoneScreen .skeleton {
+    width: 235px;
+    height: 500px;
+
+    border-radius: 35px;
+
+    position: relative;
+    overflow: hidden;
+}

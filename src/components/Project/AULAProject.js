@@ -21,6 +21,8 @@ import finaldesign1 from "./media/aula/finaldesign1.png"
 import finaldesign2 from "./media/aula/finaldesign2.png"
 import finaldesign3 from "./media/aula/finaldesign3.png"
 
+import { PhoneScreen } from "./PhoneScreen";
+
 export function AULAProject() {
     return (
         <div className="ProjectPage AULAProject">
@@ -30,10 +32,10 @@ export function AULAProject() {
             </Helmet>
 
             <div className="Banner">
-                <img src={aula_banner1} alt="AULA" className="shift-down" />
-                <img src={aula_banner2} alt="AULA" className="shift-up" />
-                <img src={aula_banner3} alt="AULA" className="shift-down" />
-                <img src={aula_banner4} alt="AULA" className="shift-up" />
+                <PhoneScreen src={aula_banner1} alt="AULA" className="shift-down" />
+                <PhoneScreen src={aula_banner2} alt="AULA" className="shift-up" />
+                <PhoneScreen src={aula_banner3} alt="AULA" className="shift-down" />
+                <PhoneScreen src={aula_banner4} alt="AULA" className="shift-up" />
             </div >
 
             <div className="Content">
