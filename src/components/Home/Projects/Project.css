@@ -120,6 +120,8 @@
 
     margin-top: 1.3em;
     margin-bottom: 1.3em;
+
+    transition: background-color 200ms ease-out, color 200ms ease-out;
 }
 
 .Hover-link:hover {
