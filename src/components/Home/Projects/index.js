@@ -10,7 +10,7 @@ export function Projects() {
 
             <Project
                 name="AULA.KZ"
-                description="AULA KZ provides solution to this problem through a centralized CRM system which connects residents with each other and with property management companies for effective and fast communication on various questions."
+                description="Connecting property management companies with residents for faster communication"
                 link_to="projects/aula"
                 src={aulakz}
             />

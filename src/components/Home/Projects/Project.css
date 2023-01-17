@@ -20,10 +20,8 @@
     border: 1px solid black;
 
     display: grid;
-    grid-template-columns: [left] 3em [left-pad] 4fr [text-end] 1fr [mid] 5fr [right-pad] 3em [right];
+    grid-template-columns: [left] 3em [left-pad] 1fr [mid] 1fr [right-pad] 3em [right];
     grid-template-rows: [top] 3em [top-pad] 400px [bottom-pad] 3em [bottom];
-
-    color: black;
 
     position: relative;
 
@@ -31,7 +29,7 @@
 }
 
 .Project-text-container {
-    grid-column: left-pad / text-end;
+    grid-column: mid / right-pad;
     grid-row: top-pad / bottom-pad;
 
     min-width: 200px;
@@ -39,13 +37,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1em;
+    gap: 1.5em;
 
-    padding-left: 3em;
+    padding-left: 5vw;
 }
 
 .Project-image-container {
-    grid-column: mid / right;
+    grid-column: left / mid;
     grid-row: top / bottom;
 
     position: relative;
@@ -58,17 +56,19 @@
 
 .Project-image {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .Project-name {
-    font-size: 1.7em;
+    font-size: 2.3em;
     font-weight: 600;
 }
 
 .Project-description {
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 .Hover {
