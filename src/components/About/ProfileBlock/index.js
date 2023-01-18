@@ -1,12 +1,15 @@
 import "./index.css";
 import ProfilePic from './profile_pic.png';
+import ProfilePicLow from './profile_pic_low.png';
+
+import { LazyImage } from "../../Image";
 
 export function ProfileBlock() {
     return (
         <div className="Profile-container">
             <div className="Profile">
                 <div className="Profile-title">
-                    <img src={ProfilePic} alt="me :3" className="Profile-pic" />
+                    <LazyImage src={ProfilePic} alt="me :3" className="Profile-pic" placeholder={ProfilePicLow} />
                     <div className="Profile-title-text">
                         <div>
                             <u><b>Amina Alen</b></u>

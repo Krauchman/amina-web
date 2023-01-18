@@ -2,7 +2,7 @@ import "./LazyImage.css";
 
 import { useState } from "react";
 
-export function LazyImage({ src, alt, placeholder }) {
+export function LazyImage({ src, alt, placeholder, className }) {
     const [isLoading, setIsLoading] = useState(true);
     const [isPlaceholderLoading, setIsPlaceholderLoading] = useState(true);
 
@@ -14,20 +14,20 @@ export function LazyImage({ src, alt, placeholder }) {
         setIsPlaceholderLoading(false);
     }
 
-    let className = "lazy-image original";
+    let imgClassName = className + " lazy-image original";
     if (isLoading) {
-        className = "lazy-image original loading";
+        imgClassName += " loading";
     }
 
-    let placeholderClassName = "lazy-image placeholder";
+    let placeholderClassName = className + " lazy-image placeholder";
     if (isPlaceholderLoading) {
-        placeholderClassName = "lazy-image placeholder loading";
+        placeholderClassName += " loading";
     }
 
     return (
         <>
             {isLoading && <img src={placeholder} alt={alt} onLoad={onPlaceholderLoad} className={placeholderClassName} />}
-            <img src={src} alt={alt} onLoad={onImageLoad} className={className} />
+            <img src={src} alt={alt} onLoad={onImageLoad} className={imgClassName} />
         </>
     )
 }
