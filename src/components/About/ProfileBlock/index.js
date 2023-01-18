@@ -9,7 +9,9 @@ export function ProfileBlock() {
         <div className="Profile-container">
             <div className="Profile">
                 <div className="Profile-title">
-                    <LazyImage src={ProfilePic} alt="me :3" className="Profile-pic" placeholder={ProfilePicLow} />
+                    <div className="Profile-pic-container">
+                        <LazyImage src={ProfilePic} alt="me :3" className="Profile-pic" placeholder={ProfilePicLow} />
+                    </div>
                     <div className="Profile-title-text">
                         <div>
                             <u><b>Amina Alen</b></u>

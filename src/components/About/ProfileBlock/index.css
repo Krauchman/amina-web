@@ -33,11 +33,20 @@
     line-height: 1.7em;
 }
 
-.Profile-pic {
-    width: 1vw;
-    min-width: 200px;
-
+.Profile-pic-container {
     border: 1.5px solid black;
+
+    position: relative;
+    overflow: hidden;
+
+    width: 200px;
+    height: 200px;
+}
+
+.Profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .Profile-title {
