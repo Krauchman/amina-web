@@ -48,6 +48,10 @@
     flex-direction: column;
 }
 
+.ProjectPage .Section:last-of-type {
+    border-bottom: none;
+}
+
 .ProjectPage .Header {
     width: 100%;
 
