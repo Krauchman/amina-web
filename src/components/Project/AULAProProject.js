@@ -5,6 +5,12 @@ import banner from "./media/aula-pro/banner.png";
 import banner_low from "./media/aula-pro/banner-low.png";
 import solution1 from "./media/aula-pro/solution1.png";
 import solution2 from "./media/aula-pro/solution2.png";
+import persona from "./media/aula-pro/persona.png";
+import wireframing1 from "./media/aula-pro/wireframing1.png";
+import wireframing2 from "./media/aula-pro/wireframing2.png";
+import wireframing3 from "./media/aula-pro/wireframing3.png";
+import finaldesign1 from "./media/aula-pro/finaldesign1.png";
+import finaldesign2 from "./media/aula-pro/finaldesign2.png";
 
 import { LazyImage } from "../Image";
 
@@ -69,6 +75,61 @@ export function AULAProProject() {
                     <img src={solution1} alt="Tracking service requests" loading="lazy" />
 
                     <img src={solution2} alt="Database on requests" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>RESEARCH</h1>
+
+                    <h2>User Interviews</h2>
+
+                    <p>As I dived deeper into the specifics of the tasks, I noticed 2 things that I needed to research: </p>
+
+                    <ol>
+                        <li>
+                            Current design <b>didn’t take into account what information of a request property managers are usually looking for</b> on a request page;
+                        </li>
+                        <li>
+                            There is a high chance that <b>property managers would like to have some additional functionality or don’t actually need some of the existing one.</b>
+                        </li>
+                    </ol>
+
+                    <p>To get information on this I conducted <b>user interviews</b> and <b>visited property managers’ offices</b> to observe how they use and navigate on the request page.</p>
+
+                    <h2>Journey Map & Persona</h2>
+
+                    <img src={persona} alt="Journey Map & Persona" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>WIREFRAMING</h1>
+
+                    <h2>Sketching request page for app and desktop</h2>
+
+                    <img src={wireframing1} alt="Wireframing" loading="lazy" />
+
+                    <img src={wireframing2} alt="Wireframing" loading="lazy" />
+
+                    <img src={wireframing3} alt="Wireframing" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>FINAL DESIGNS</h1>
+
+                    <h2>Final designs</h2>
+
+                    <img src={finaldesign1} alt="Final design" loading="lazy" />
+
+                    <img src={finaldesign2} alt="Final design" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>REFLECTIONS</h1>
+
+                    <h2>Learning and outcomes</h2>
+
+                    <p>The second round of interviews with managers showed that they are more satisfied with the redesigned interfaces of both app and desktop versions. Both interfaces appeared more aesthetically pleasing and better adapted to their requests to faster navigate on a page. They highlighted <b>(1) export as an Excel file and (2) ability to accept a request for a service company employees were especially helpful to facilitate the overall process.</b> </p>
+
+                    <p>This task helped to enhance my knowledge on creating efficient information hierarchy. For further steps I’d like to apply obtained knowledge for other pages of the product where data is not visualized in a usable way.</p>
                 </div>
 
             </div>
