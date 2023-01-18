@@ -1,0 +1,18 @@
+.lazy-image.original {
+    transition: filter 400ms ease-in-out;
+}
+
+.lazy-image.original.loading {
+    opacity: 0;
+    position: absolute;
+    filter: blur(20px);
+}
+
+.lazy-image.placeholder {
+    filter: blur(20px);
+    transition: opacity 400ms ease-out;
+}
+
+.lazy-image.placeholder.loading {
+    opacity: 0;
+}

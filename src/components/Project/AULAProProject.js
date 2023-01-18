@@ -2,8 +2,11 @@ import "./index.css";
 import { Helmet } from "react-helmet";
 
 import banner from "./media/aula-pro/banner.png";
+import banner_low from "./media/aula-pro/banner-low.png";
 import solution1 from "./media/aula-pro/solution1.png";
 import solution2 from "./media/aula-pro/solution2.png";
+
+import { LazyImage } from "../Image";
 
 export function AULAProProject() {
     return (
@@ -14,7 +17,7 @@ export function AULAProProject() {
             </Helmet>
 
             <div className="Banner">
-                <img src={banner} alt="AULA PRO" />
+                <LazyImage src={banner} alt="AULA PRO" placeholder={banner_low} />
             </div >
 
             <div className="Content">
