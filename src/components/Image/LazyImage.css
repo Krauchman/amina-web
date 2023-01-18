@@ -1,5 +1,7 @@
 .lazy-image.original {
-    transition: filter 400ms ease-out, opacity 200ms ease-out;
+    animation-name: blurry-appear;
+    animation-duration: 700ms;
+
     z-index: 1;
 }
 
@@ -25,6 +27,23 @@
     position: absolute;
     animation-name: hide-delay;
     animation-duration: 500ms;
+}
+
+@keyframes blurry-appear {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+
+    40% {
+        opacity: 1;
+        filter: blur(20px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 @keyframes hide-delay {
