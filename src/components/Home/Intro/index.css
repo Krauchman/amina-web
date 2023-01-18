@@ -1,4 +1,41 @@
 .Intro-container {
+    display: grid;
+    grid-template-columns: [left] 1fr [right];
+    grid-template-rows: [top] 1fr [bottom];
+}
+
+.Intro-back-container {
+    grid-column: left / right;
+    grid-row: top / bottom;
+
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.Hand-Left {
+    width: 770px;
+    min-width: 770px;
+    transform: translate(100px, 0px);
+}
+
+.Hand-Right {
+    width: 800px;
+    min-width: 800px;
+    transform: translate(-100px, -10px);
+}
+
+.Intro-front-container {
+    grid-column: left / right;
+    grid-row: top / bottom;
+
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     justify-items: start;
@@ -13,11 +50,6 @@
     padding-bottom: 7em;
     padding-left: 3em;
     padding-right: 3em;
-
-    background-image: url(hands.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .Hello {
@@ -50,6 +82,18 @@
 
 @media (max-width: 768px) {
     /* For mobile phones: */
+
+    .Hand-Left {
+        width: 900px;
+        min-width: 900px;
+        transform: translate(150px, 0px);
+    }
+
+    .Hand-Right {
+        width: 850px;
+        min-width: 850px;
+        transform: translate(-150px, -10px);
+    }
 
     .Hello {
         width: 90%;
