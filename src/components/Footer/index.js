@@ -29,7 +29,14 @@ export function Footer() {
 
             <div className="Footer-links">
                 <Link to="/about" className="link">About</Link>
-                <Link to="/resume" className="link">Resume</Link>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://drive.google.com/file/d/19NUavf6DFDdNNVnSc8Xiz0qlfUa85E8Z/view?usp=sharing"
+                    className="link"
+                >
+                    Resume
+                </a>
             </div>
 
         </div >
