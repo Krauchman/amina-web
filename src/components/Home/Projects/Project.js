@@ -1,8 +1,10 @@
 import "./Project.css";
-import placeholder from './placeholder.png';
+import grey from './placeholder.png';
 import Cat from './cat.svg';
 
 import { Link } from "react-router-dom";
+
+import { LazyImage } from "../../Image";
 
 export function Project(props) {
     const name = props.name
@@ -20,7 +22,7 @@ export function Project(props) {
                     </div>
                 </div>
                 <div className="Project-image-container">
-                    <img className="Project-image" alt={name} src={props?.src || placeholder} />
+                    <LazyImage className="Project-image" alt={name} src={props?.src || grey} placeholder={props?.placeholder || grey} />
                 </div>
                 <Link to={props.link_to} className="Project-link link no-hover-effect">
                     View Full Project
