@@ -23,13 +23,10 @@ export function LazyImage({ src, alt, placeholder, className }) {
     if (isLoading) {
         imgClassName += " loading";
     }
-    else {
-        placeholderClassName += " hide";
-    }
 
     return (
         <>
-            <img src={placeholder} alt={alt} onLoad={onPlaceholderLoad} className={placeholderClassName} />
+            {isLoading && <img src={placeholder} alt={alt} onLoad={onPlaceholderLoad} className={placeholderClassName} />}
             <img src={src} alt={alt} onLoad={onImageLoad} className={imgClassName} />
         </>
     )
