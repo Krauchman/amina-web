@@ -14,19 +14,22 @@ export function LazyImage({ src, alt, placeholder, className }) {
         setIsPlaceholderLoading(false);
     }
 
-    let imgClassName = className + " lazy-image original";
-    if (isLoading) {
-        imgClassName += " loading";
-    }
-
     let placeholderClassName = className + " lazy-image placeholder";
     if (isPlaceholderLoading) {
         placeholderClassName += " loading";
     }
 
+    let imgClassName = className + " lazy-image original";
+    if (isLoading) {
+        imgClassName += " loading";
+    }
+    else {
+        placeholderClassName += " hide";
+    }
+
     return (
         <>
-            {isLoading && <img src={placeholder} alt={alt} onLoad={onPlaceholderLoad} className={placeholderClassName} />}
+            <img src={placeholder} alt={alt} onLoad={onPlaceholderLoad} className={placeholderClassName} />
             <img src={src} alt={alt} onLoad={onImageLoad} className={imgClassName} />
         </>
     )
