@@ -32,7 +32,7 @@ export function Projects() {
 
             <Project
                 name="ZHULDYZ ZHORAMAL"
-                description="Designed some empty state screens in kawaii style for the popular sheepify app"
+                description="Creating first horoscope app for Kazakh speaking users"
                 link_to="projects/zhuldyz-zhoramal"
                 src={zhuldyzzhoramal}
                 placeholder={zhuldyzzhoramal_low}
