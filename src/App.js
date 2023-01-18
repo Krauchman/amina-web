@@ -1,6 +1,7 @@
 import "./App.css";
 
 import * as React from "react";
+import { useEffect } from "react";
 import { Routes, Route, Outlet, Link, useLocation } from "react-router-dom";
 
 import { createRef } from 'react'
@@ -26,6 +27,12 @@ export default function App() {
   const location = useLocation();
   const { nodeRef } =
     routes.find((route) => route.path === location.pathname) ?? { nodeRef: noMatchRef }
+
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual"
+    }
+  }, []);
 
   return (
     <div>
