@@ -1,7 +1,7 @@
 import "./index.css";
 import Meow from './logo_meow.svg';
 
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const navbar_links = [
     { to: '/about', name: "About" },
@@ -9,16 +9,9 @@ const navbar_links = [
 ]
 
 function NavBarLink(props) {
-    const location = useLocation();
-
-    let className = "link";
-    if (location.pathname === props.to) {
-        className = "link active";
-    }
-
     return (
         <div className="NavBar-link">
-            <Link to={props.to} className={className}>
+            <Link to={props.to} className="link">
                 {props.name}
             </Link>
         </div>
