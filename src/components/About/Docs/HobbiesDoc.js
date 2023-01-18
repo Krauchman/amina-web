@@ -56,10 +56,6 @@ export function HobbiesDoc() {
                         <PhotoCard src={hobby9} title="8th March Cake with Tulips" placeholder={hobby9_low} />
                     </div>
 
-                    <h1 className="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-
-                    <p className="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-
                 </div>
 
             </div>
