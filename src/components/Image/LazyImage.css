@@ -1,5 +1,5 @@
 .lazy-image.original {
-    transition: filter 400ms ease-out;
+    transition: filter 300ms ease-out;
 }
 
 .lazy-image.original.loading {
@@ -10,9 +10,21 @@
 
 .lazy-image.placeholder {
     filter: blur(20px);
-    transition: opacity 400ms ease-out;
+    animation-name: placeholder-appear;
+    animation-duration: 300ms;
 }
 
 .lazy-image.placeholder.loading {
     opacity: 0;
+    animation-name: none;
+}
+
+@keyframes placeholder-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
