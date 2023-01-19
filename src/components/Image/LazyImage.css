@@ -23,7 +23,7 @@
     display: none;
 
     animation-name: placeholder-disappear;
-    animation-duration: 400ms;
+    animation-duration: 800ms;
 }
 
 @keyframes placeholder-disappear {
