@@ -2,7 +2,7 @@ import "./index.css";
 import { Helmet } from "react-helmet";
 
 import banner from "./media/aula-pro/banner.png";
-import banner_low from "./media/aula-pro/banner-low.png";
+import banner_low from "./media/aula-pro/banner-low.webp";
 import solution1 from "./media/aula-pro/solution1.png";
 import solution2 from "./media/aula-pro/solution2.png";
 import persona from "./media/aula-pro/persona.png";

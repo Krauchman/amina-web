@@ -3,8 +3,8 @@ import "./index.css";
 import hand_left from "./hand_left.png";
 import hand_right from "./hand_right.png"
 
-import hand_left_low from "./hand_left_low.png";
-import hand_right_low from "./hand_right_low.png"
+import hand_left_low from "./hand_left_low.webp";
+import hand_right_low from "./hand_right_low.webp"
 
 import { useState, useEffect } from "react";
 
