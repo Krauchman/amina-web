@@ -1,5 +1,5 @@
 .lazy-image.original {
-    transition: opacity 400ms ease;
+    transition: opacity 200ms ease;
 }
 
 .lazy-image.original.loading {
@@ -23,7 +23,7 @@
     display: none;
 
     animation-name: placeholder-disappear;
-    animation-duration: 800ms;
+    animation-duration: 400ms;
 }
 
 @keyframes placeholder-disappear {
