@@ -1,5 +1,5 @@
 .lazy-image.original {
-    transition: opacity 200ms ease;
+    transition: opacity 400ms ease;
 }
 
 .lazy-image.original.loading {
