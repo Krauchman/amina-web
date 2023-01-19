@@ -28,7 +28,7 @@ function useScrollPosition() {
 function HandSeparator() {
     const scrollPosition = useScrollPosition();
 
-    let minWidth = 100 - (scrollPosition / 3);
+    let minWidth = 100 - (scrollPosition / 2);
     minWidth = Math.max(minWidth, 0);
 
     return (
