@@ -30,14 +30,14 @@ export function LazyImage({ src, alt, placeholder, className }) {
     return (
         <>
 
-            <img src={src} alt={alt} onLoad={onImageLoad} className={imgClassName} />
-
             <img
                 src={placeholder}
                 alt={alt}
                 onLoad={onPlaceholderLoad}
                 className={placeholderClassName}
             />
+
+            <img src={src} alt={alt} onLoad={onImageLoad} className={imgClassName} />
 
         </>
     )
