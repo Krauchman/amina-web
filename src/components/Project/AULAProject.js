@@ -174,7 +174,7 @@ export function AULAProject() {
                 <div className="Section">
                     <h1>03 DESIGN</h1>
 
-                    <h2>Wireframing main menu page</h2>
+                    <h2>Different versions of main page</h2>
 
                     <img src={wireframingmainmenu} alt="Wireframing main menu page" loading="lazy" />
                 </div>
