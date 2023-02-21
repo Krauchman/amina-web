@@ -21,6 +21,8 @@ import finaldesign1 from "./media/aula/finaldesign1.png"
 import finaldesign2 from "./media/aula/finaldesign2.png"
 import finaldesign3 from "./media/aula/finaldesign3.png"
 
+import library from "./media/aula/library.png"
+
 import { PhoneScreen } from "./PhoneScreen";
 
 export function AULAProject() {
@@ -189,6 +191,12 @@ export function AULAProject() {
                     <img src={finaldesign2} alt="QR code to open door" loading="lazy" />
 
                     <img src={finaldesign3} alt="Switching to bottom navigation" loading="lazy" />
+                </div>
+
+                <div className="Section">
+                    <h1>LIBRARY OF STYLES & COMPONENTS</h1>
+
+                    <img src={library} alt="Library" loading="lazy" />
                 </div>
 
                 <div className="Section">
