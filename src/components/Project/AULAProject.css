@@ -1,3 +1,7 @@
+.AULAProject .Banner {
+    background-color: #CEEAD9;
+}
+
 .AULAProject .shift-down {
     transform: translate(0, 3em);
 
