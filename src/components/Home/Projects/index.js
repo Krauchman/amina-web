@@ -1,9 +1,11 @@
 import "./index.css";
 
+import beeline from './media/beeline.png';
 import aulakz from './media/aulakz.png';
 import aulapro from './media/aulapro.png';
 import zhuldyzzhoramal from './media/zhuldyzzhoramal.png';
 
+import beeline_low from './media/beeline_low.png';
 import aulakz_low from './media/aulakz_low.png';
 import aulapro_low from './media/aulapro_low.png';
 import zhuldyzzhoramal_low from './media/zhuldyzzhoramal_low.png';
@@ -13,6 +15,15 @@ import { Project } from "./Project.js";
 export function Projects() {
     return (
         <div className="Projects-container">
+
+            <Project
+                name="B2B PERSONAL OFFICE, BEELINE"
+                hover_name="BEELINE"
+                description="Designed some empty state screens in kawaii style for the popular sheepify app "
+                link_to="projects/beeline"
+                src={beeline}
+                placeholder={beeline_low}
+            />
 
             <Project
                 name="AULA.KZ"

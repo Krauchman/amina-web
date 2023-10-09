@@ -28,12 +28,12 @@ export function Footer() {
             </div>
 
             <div className="Footer-links">
-                <Link to="/about" className="link">About</Link>
+                <Link to="/about" className="link white-link">About</Link>
                 <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://amina-alen.com/resume"
-                    className="link"
+                    className="link white-link"
                 >
                     Resume
                 </a>

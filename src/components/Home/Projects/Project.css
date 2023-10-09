@@ -8,7 +8,7 @@
     font-family: 'Epilogue', sans-serif;
     color: #2D2D2D;
 
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 4em;
 }
 
@@ -17,7 +17,10 @@
 
     background-color: #FFFFFF;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 32px;
+
+    overflow: hidden;
 
     display: grid;
     grid-template-columns: [left] 3em [left-pad] 1fr [mid] 1fr [right-pad] 3em [right];

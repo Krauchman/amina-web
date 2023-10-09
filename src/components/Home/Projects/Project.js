@@ -31,7 +31,7 @@ export function Project(props) {
                 {/* ON HOVER */}
                 <div className="Hover">
                     <div className="Hover-name">
-                        {name}
+                        {props.hover_name ? props.hover_name : name}
                     </div>
                     <Link to={props.link_to} className="Hover-link link no-hover-effect">
                         View Full Project
