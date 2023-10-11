@@ -1,0 +1,89 @@
+.ActionBlock {
+    background-color: #FDF7BB;
+    border-radius: 32px;
+    
+    padding: 0em;
+    margin-top: 4em;
+
+    font-weight: 500;
+    
+    display: grid;
+    grid-template-columns: [left] 2.5em [left-pad] 3fr [mid-start] 2em [mid-end] 1fr [right-pad] 2.5em [right];
+    grid-template-rows: [top] 2.5em [top-pad] 1fr [bottom-pad] 2.5em [bottom];
+
+    position: relative;
+}
+
+.ActionBlock .TextSection {
+    grid-column: left-pad / mid-start;
+    grid-row: top-pad / bottom-pad;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.ActionBlock .ButtonsSection {
+    grid-column: mid-end / right-pad;
+    grid-row: top-pad / bottom-pad;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.ButtonsSection .Button {
+    background-color: #323232;
+
+    border-radius: 20px;
+
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.5px;
+
+    white-space: nowrap;
+}
+
+.ActionBlock p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+@media (max-width: 1000px) {
+    /* For mobile phones: */
+
+    .ActionBlock {
+        grid-template-columns: [left] 2em [left-pad] 1fr [right-pad] 2em [right];
+        grid-template-rows: [top] 2em [top-pad] 2fr [mid-start] 2em [mid-end] 1fr [bottom-pad] 2em [bottom];
+    }
+
+    .ActionBlock .TextSection {
+        grid-column: left-pad / right-pad;
+        grid-row: top-pad / mid-start;
+    }
+
+    .ActionBlock .ButtonsSection {
+        grid-column: left-pad / right-pad;
+        grid-row: mid-end / bottom-pad;
+
+        align-items: center;
+    }
+
+    .ButtonsSection .Button {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+}
