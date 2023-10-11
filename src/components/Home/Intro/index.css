@@ -16,6 +16,25 @@
 
     position: relative;
     overflow: hidden;
+
+    gap: 500px;
+    opacity: 0.0;
+
+    animation-name: hands-come-together;
+    animation-duration: 5000ms;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hands-come-together {
+    80% {
+        opacity: 1.0;
+    }
+    
+    100% {
+        opacity: 1.0;
+        gap: 120px;
+    }
 }
 
 .Hand-Left {
@@ -106,5 +125,20 @@
 
     .Why {
         width: 90%;
+    }
+
+    .Intro-back-container {
+        gap: 300px;
+    }
+
+    @keyframes hands-come-together {
+        80% {
+            opacity: 1.0;
+        }
+        
+        100% {
+            opacity: 1.0;
+            gap: 30px;
+        }
     }
 }
