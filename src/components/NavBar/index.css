@@ -8,7 +8,7 @@
     padding-top: 1em;
     padding-bottom: 1em;
 
-    min-height: 52px;
+    min-height: 3em;
 }
 
 .NavBar-links {
@@ -33,4 +33,27 @@
 
 .NavBar-link .active:hover {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+
+    .NavBar {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+
+    .NavBar-links {
+        gap: 2em;
+    }
+
+    .NavBar-link {
+        font-size: 1.0em;
+    }
+    
+    .NavBar-logo {
+        width: 2.5em;
+    }
 }
