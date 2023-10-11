@@ -9,7 +9,7 @@ export function ActionBlock({texts, buttonText, buttonLink}) {
                     <p>{text}</p>
                 ))}
             </div>
-            <a className="link no-hover-effect ButtonsSection" target="_blank" href={buttonLink}>
+            <a className="link no-hover-effect ButtonsSection" target="_blank" rel="noreferrer" href={buttonLink}>
                 <div className="Button">
                     {buttonText}
                 </div>
