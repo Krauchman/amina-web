@@ -59,7 +59,7 @@ export function BeelineProject() {
                     </ul>
 
                     <ActionBlock 
-                        texts={["Due to NDA, this project content has been protected.", "Interested in learning more?"]}
+                        texts={["Due to NDA, this project content has been protected. Interested in learning more?"]}
                         buttonText="Email me!"
                         buttonLink="mailto:alenamina1010@gmail.com"
                     />
