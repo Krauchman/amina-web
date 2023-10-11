@@ -5,7 +5,7 @@
     font-family: 'Epilogue', sans-serif;
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1.3em;
     background-color: #323232;
 
     padding-left: 5em;
@@ -52,10 +52,27 @@
 
     .Footer-container {
         flex-direction: column;
-        gap: 2em;
+        gap: 3em;
 
         padding-left: 2em;
         padding-right: 2em;
+    }
+
+    .Contacts-container {
+        align-items: center;
+    }
+
+    .Footer-logo-container {
+        justify-content: center;
+    }
+
+    .Footer-links {
+        align-items: center;
+    }
+
+    .Footer-logo {
+        width: 80vw;
+        min-width: 10em;
     }
 }
 
