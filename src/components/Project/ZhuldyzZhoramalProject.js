@@ -25,7 +25,7 @@ export function ZhuldyzZhoramalProject() {
                 <LazyImage src={banner} alt="Zhuldyz Zhoramal" placeholder={banner_low} />
             </div >
 
-            <div className="Content">
+            <div className="Content StackedCardSection">
 
                 <div className="Section">
                     <div className="Header">

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
     return (
-        <div className="Footer-container">
+        <div className="Footer-container StackedCardSection">
 
             <div className="Contacts-container">
                 <div className="Contact-me">Contact me!</div>

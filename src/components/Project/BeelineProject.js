@@ -20,7 +20,7 @@ export function BeelineProject() {
                 <LazyImage src={banner} alt="Beeline" placeholder={banner_low} />
             </div >
 
-            <div className="Content">
+            <div className="Content StackedCardSection">
 
                 <div className="Section">
                     <div className="Header">

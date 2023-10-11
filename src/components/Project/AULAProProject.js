@@ -26,7 +26,7 @@ export function AULAProProject() {
                 <LazyImage src={banner} alt="AULA PRO" placeholder={banner_low} />
             </div >
 
-            <div className="Content">
+            <div className="Content StackedCardSection">
 
                 <div className="Section">
                     <div className="Header">

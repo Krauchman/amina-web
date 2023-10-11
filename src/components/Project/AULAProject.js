@@ -40,7 +40,7 @@ export function AULAProject() {
                 <PhoneScreen src={aula_banner4} alt="AULA" className="shift-up" />
             </div >
 
-            <div className="Content">
+            <div className="Content StackedCardSection">
 
                 <div className="Section">
                     <div className="Header">

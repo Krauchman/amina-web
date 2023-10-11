@@ -11,8 +11,10 @@ export function About() {
             </Helmet>
 
             <ProfileBlock />
-            <ACMDoc />
-            <HobbiesDoc />
+            <div className="StackedCardSection">
+                <ACMDoc />
+                <HobbiesDoc />
+            </div>
         </div>
     );
 }
