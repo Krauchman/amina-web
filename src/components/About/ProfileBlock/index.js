@@ -27,7 +27,7 @@ export function ProfileBlock() {
                 <div className="Profile-bio">
                     <b>Bio:</b>
                     <br />
-                    In 5th grade I came up with a clear career choice of a designer. But finding out which one wasn’t an easy task which took me 8 years. I was considering interior design and even tried myself as a visual designer...
+                    Making world a better place by moving pixels and observing people
                 </div>
             </div>
         </div >

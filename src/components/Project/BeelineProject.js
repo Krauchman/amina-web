@@ -37,6 +37,24 @@ export function BeelineProject() {
                     </div>
                 </div>
 
+                
+                <div className="Section">
+                    <h1>SUMMARY</h1>
+
+                    <h2>Context</h2>
+
+                    <p>Beeline is one of the biggest telco companies in CIS. Apart from its sales in B2C segment, it also contracts with companies to sell business corporate telephone numbers. B2B Personal Office digitalizes operations that are carried out on business numbers to provide ease of use and efficiency in terms financial and time resources.</p>
+
+                    <h2>Delivering design solutions for monetization</h2>
+
+                    <p>During my time here I worked on discovering potential ways of monetization for the product and launched the final solution with my team. I began by conducting competitive analysis which helped me not only to see how competitors monetize their products but also to find out best practices and trends. I presented results of the analysis and my suggestions for monetization to my lead designer, stakeholders and product team. After our brainstorm discussions we decided to implement one of my suggested solution: cross sales of other Beeline B2B products on our main page. Within one month the click rate on promo banners achieved >1000 (with MAU 2800) and the number of successful sales was >40, although we were expecting much lower numbers. Our further plans include conducting user interviews with clients who purchased products on our main page to investigate personas and scenarios.</p>
+
+                    <h2>Exploring usability issues</h2>
+
+                    <p>Apart from monetization problem, I also addressed the issue of usability and intuitiveness of the interface. Via the survey sent to Beeline managers working in call center, I found out that most of the operations available to clients are performed by our internal managers in call center. This finding indicates that there are some stop factors for clients to use the product themselves. I conducted user interviews with our clients and analyzed heat maps and screen recordings to notice any common patterns. After I combined my research findings, I concluded that clients indicate navigation and some specific functionality as unintuitive to use. I demonstrated results of the research to stakeholders. For the first iteration of the solution we decided to create more comprehensive instruction manual of our interface in FAQ page.</p>
+                </div>
+
+
                 <div className="Section">
                     <h1>TAKEAWAYS</h1>
 

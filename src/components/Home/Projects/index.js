@@ -19,7 +19,7 @@ export function Projects() {
             <Project
                 name="B2B PERSONAL OFFICE, BEELINE"
                 hover_name="BEELINE"
-                description="Designed some empty state screens in kawaii style for the popular sheepify app "
+                description="Digitalizing operations on business numbers for efficient management"
                 link_to="projects/beeline"
                 src={beeline}
                 placeholder={beeline_low}
