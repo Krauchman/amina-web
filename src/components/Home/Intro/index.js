@@ -23,7 +23,7 @@ export function Intro() {
                 </div>
                 <div className="UX-Designer">
                     <span className="Blue">UX designer</span> crafting products that <br />
-                    connect <span className="Blue">people</span> together with <br />
+                    connect <span className="Blue">people</span> with <br />
                     emerging <span className="Blue">technologies</span>
                 </div>
                 <div className="Why">
