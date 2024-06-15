@@ -1,7 +1,18 @@
+.Intro-section {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
 .Intro-container {
     display: grid;
     grid-template-columns: [left] 1fr [right];
     grid-template-rows: [top] 1fr [bottom];
+
+    max-width: 125em;
+    width: 100%;
 }
 
 .Intro-back-container {
@@ -21,35 +32,40 @@
     opacity: 0.0;
 
     animation-name: hands-come-together;
-    animation-duration: 5000ms;
+    animation-duration: 4000ms;
     animation-delay: 200ms;
     animation-fill-mode: forwards;
 }
 
 @keyframes hands-come-together {
-    80% {
+    90% {
         opacity: 1.0;
     }
-    
+
     100% {
         opacity: 1.0;
-        gap: 120px;
+        gap: 0em;
     }
 }
 
 .Hand-Left {
-    width: 800px;
-    min-width: 800px;
-    transform: translate(100px, 0px);
+    width: 60em;
+    transform: translate(160px, 30px);
+
+    opacity: 1.0;
 }
 
 .Hand-Right {
-    width: 800px;
-    min-width: 800px;
-    transform: translate(-100px, -10px);
+    width: 60em;
+    transform: translate(-80px, 0px);
+
+    opacity: 1.0;
 }
 
 .Intro-front-container {
+    max-width: 1500px;
+    justify-self: center;
+
     grid-column: left / right;
     grid-row: top / bottom;
 
@@ -69,28 +85,31 @@
     padding-bottom: 7em;
     padding-left: 3em;
     padding-right: 3em;
+
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 .Hello {
     font-weight: 600;
     font-size: 1.5em;
 
-    width: 75%;
+    width: 100%;
 }
 
 .UX-Designer {
     font-weight: 700;
-    font-size: 3.5vw;
+    font-size: 4em;
     line-height: 1.5em;
 
-    width: 75%;
+    width: 100%;
 }
 
 .Why {
     font-weight: 500;
     font-size: 1em;
 
-    width: 75%;
+    width: 100%;
 
     line-height: 1.5em;
 }
@@ -99,32 +118,48 @@
     color: #0A34A4;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1342px) {
     /* For mobile phones: */
 
+    .Intro-section {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .Intro-front-container {
+        justify-self: auto;
+        padding-top: 15vw;
+        padding-bottom: 15vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
     .Hand-Left {
-        width: 900px;
-        min-width: 900px;
-        transform: translate(150px, 0px);
+        width: 70vw;
+        transform: translate(15vw, -1em);
     }
 
     .Hand-Right {
-        width: 850px;
-        min-width: 850px;
-        transform: translate(-150px, -10px);
+        width: 70vw;
+        transform: translate(-15vw, -1em);
     }
 
     .Hello {
-        width: 90%;
+        width: 97%;
+        font-size: 2.5vw;
     }
 
     .UX-Designer {
-        width: 90%;
-        font-size: 1.9em;
+        width: 97%;
+        font-size: 4.5vw;
     }
 
     .Why {
-        width: 90%;
+        width: 97%;
+        font-size: 1.8vw;
     }
 
     .Intro-back-container {
@@ -132,13 +167,27 @@
     }
 
     @keyframes hands-come-together {
-        80% {
+        0% {
+            gap: 70vw;
+        }
+
+        90% {
             opacity: 1.0;
         }
-        
+
         100% {
             opacity: 1.0;
-            gap: 30px;
+            gap: 15vw;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .Hello {
+        font-size: 3.5vw;
+    }
+
+    .Why {
+        font-size: 3vw;
     }
 }
