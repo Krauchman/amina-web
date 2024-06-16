@@ -152,8 +152,8 @@
     /* For mobile phones: */
 
     .Project {
-        width: 90%;
-        max-width: 400px;
+        width: 75%;
+        max-width: 600px;
 
         display: grid;
         grid-template-columns: [left] 2em [left-pad] 1fr [right-pad] 2em [right];
@@ -172,13 +172,23 @@
         width: 100%;
     }
 
+    .Project-name {
+        font-size: 6vw;
+    }
+
+    .Project-description {
+        font-size: 4vw;
+    }
+
     .Project-text-container {
         grid-column: left-pad / right-pad;
         grid-row: image-end / text-end;
 
-        padding-left: 0;
+        padding-left: 2vw;
         padding-top: 3em;
         padding-bottom: 3em;
+
+        gap: 5vw;
     }
 
     .Hover {
@@ -194,11 +204,11 @@
         justify-content: center;
 
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 4vw;
 
         padding-left: 2em;
         padding-right: 2em;
-        padding-top: 0.7em;
+        padding-top: 0.8em;
         padding-bottom: 0.7em;
 
         background-color: #2D2D2D;

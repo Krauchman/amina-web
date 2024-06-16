@@ -138,27 +138,27 @@
     }
 
     .Hand-Left {
-        width: 70vw;
-        transform: translate(15vw, -1em);
+        width: 80vw;
+        transform: translate(20vw, -1em);
     }
 
     .Hand-Right {
-        width: 70vw;
-        transform: translate(-15vw, -1em);
+        width: 80vw;
+        transform: translate(-14vw, -1em);
     }
 
     .Hello {
-        width: 97%;
+        width: 100%;
         font-size: 2.5vw;
     }
 
     .UX-Designer {
-        width: 97%;
-        font-size: 4.5vw;
+        width: 100%;
+        font-size: 5.2vw;
     }
 
     .Why {
-        width: 97%;
+        width: 100%;
         font-size: 1.8vw;
     }
 
