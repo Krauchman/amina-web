@@ -9,12 +9,13 @@ const navbar_links = [
 ]
 
 function NavBarLink(props) {
+    const activeLinkClassNameOptional = (props.to === window.location.pathname ? " NavBarActiveLink" : "");
     return (
-        <div className="NavBar-link">
-            <Link to={props.to} className="link">
+        <div className="NavBar-link" >
+            <Link to={props.to} className={"link" + activeLinkClassNameOptional}>
                 {props.name}
             </Link>
-        </div>
+        </div >
     )
 }
 

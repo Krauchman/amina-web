@@ -27,12 +27,14 @@
     width: 3em;
 }
 
-.NavBar-link .active {
-    font-weight: 600;
+.NavBar-link:hover {
+    opacity: 1;
 }
 
-.NavBar-link .active:hover {
-    opacity: 1;
+.NavBarActiveLink {
+    text-decoration: underline 2px;
+    font-weight: 500;
+    text-underline-offset: 4px;
 }
 
 @media (max-width: 768px) {
@@ -52,7 +54,7 @@
     .NavBar-link {
         font-size: 1.0em;
     }
-    
+
     .NavBar-logo {
         width: 2.5em;
     }
