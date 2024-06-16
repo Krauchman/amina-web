@@ -29,17 +29,17 @@
     /* For mobile phones: */
 
     .PhoneScreen {
-        border-radius: 25px;
+        border-radius: 20px;
     }
 
     .PhoneScreen img {
-        width: 175px;
+        width: 30vw;
     }
 
     .PhoneScreen .skeleton {
-        width: 175px;
-        height: 360px;
+        width: 30vw;
+        height: 70vw;
 
-        border-radius: 25px;
+        border-radius: 20px;
     }
 }

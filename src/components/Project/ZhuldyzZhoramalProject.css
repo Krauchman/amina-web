@@ -1,3 +1,13 @@
 .ZhuldyzZhoramalProject .Banner {
     background-color: #CABEEF;
 }
+
+.ZhuldyzZhoramalProject .Banner img {
+    transform: translate(-6%, 0)
+}
+
+@media (max-width: 768px) {
+    .ZhuldyzZhoramalProject .Banner img {
+        transform: translate(-2%, 0)
+    }
+}

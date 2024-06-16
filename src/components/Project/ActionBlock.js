@@ -1,12 +1,12 @@
 import "./index.css";
 import "./ActionBlock.css"
 
-export function ActionBlock({texts, buttonText, buttonLink}) {
+export function ActionBlock({ texts, buttonText, buttonLink }) {
     return (
         <div className="ActionBlock">
             <div className="TextSection">
                 {texts.map((text) => (
-                    <p>{text}</p>
+                    <p key={buttonLink}>{text}</p>
                 ))}
             </div>
             <a className="link no-hover-effect ButtonsSection" target="_blank" rel="noreferrer" href={buttonLink}>

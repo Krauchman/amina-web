@@ -3,7 +3,6 @@ import "./ZhuldyzZhoramalProject.css"
 import { Helmet } from "react-helmet";
 
 import banner from "./media/zhuldyz-zhoramal/banner.png";
-import banner_low from "./media/zhuldyz-zhoramal/banner_low.webp";
 import solution from "./media/zhuldyz-zhoramal/solution.png";
 import myapproach from "./media/zhuldyz-zhoramal/myapproach.png";
 import finalprototypes from "./media/zhuldyz-zhoramal/finalprototypes.png";
@@ -21,8 +20,8 @@ export function ZhuldyzZhoramalProject() {
                 <title>Zhuldyz Zhoramal</title>
             </Helmet>
 
-            <div className="Banner">
-                <LazyImage src={banner} alt="Zhuldyz Zhoramal" placeholder={banner_low} />
+            <div className="Banner BannerSingleImage">
+                <LazyImage src={banner} alt="Zhuldyz Zhoramal" />
             </div >
 
             <div className="Content StackedCardSection">

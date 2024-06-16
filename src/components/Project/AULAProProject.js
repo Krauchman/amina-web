@@ -2,7 +2,6 @@ import "./index.css";
 import { Helmet } from "react-helmet";
 
 import banner from "./media/aula-pro/banner.png";
-import banner_low from "./media/aula-pro/banner-low.webp";
 import solution1 from "./media/aula-pro/solution1.png";
 import solution2 from "./media/aula-pro/solution2.png";
 import persona from "./media/aula-pro/persona.png";
@@ -22,8 +21,8 @@ export function AULAProProject() {
                 <title>AULA PRO</title>
             </Helmet>
 
-            <div className="Banner">
-                <LazyImage src={banner} alt="AULA PRO" placeholder={banner_low} />
+            <div className="Banner BannerSingleImage">
+                <LazyImage src={banner} alt="AULA PRO" />
             </div >
 
             <div className="Content StackedCardSection">

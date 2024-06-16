@@ -1,3 +1,7 @@
 .BeelineProject .Banner {
     background-color: #FDF7BB;
 }
+
+.BeelineProject .Banner img {
+    transform: translate(5%);
+}

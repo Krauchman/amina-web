@@ -45,15 +45,15 @@
 
     .AULAProject .Banner {
         height: 40vh;
-        gap: 2em;
+        gap: 5vw;
     }
 
     .AULAProject .shift-down {
-        transform: translate(0, 60px);
+        transform: translate(0, 11vh);
     }
 
     .AULAProject .shift-up {
-        transform: translate(0, -60px);
+        transform: translate(0, -11vh);
     }
 
     @keyframes appear-up {
@@ -64,7 +64,7 @@
 
         to {
             opacity: 1;
-            transform: translate(0, -60px);
+            transform: translate(0, -11vh);
         }
     }
 
@@ -76,7 +76,7 @@
 
         to {
             opacity: 1;
-            transform: translate(0, 60px);
+            transform: translate(0, 11vh);
         }
     }
 }
