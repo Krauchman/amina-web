@@ -8,18 +8,20 @@
 .ProjectPage .Banner {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 4em;
 
     position: relative;
     overflow: hidden;
 
-    min-height: 35vh;
+    min-height: 30vh;
     max-height: 60vh;
 
     background-color: #C3EFD0;
 
     padding-bottom: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 .ProjectPage .BannerSingleImage img {
@@ -53,6 +55,29 @@
     flex-direction: column;
 }
 
+.ProjectPage .Section .Columns {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.ProjectPage .Section .Columns img {
+    object-fit: cover;
+}
+
+.ProjectPage .Section .Columns .col-1 {width: 8.33%;}
+.ProjectPage .Section .Columns .col-2 {width: 16.66%;}
+.ProjectPage .Section .Columns .col-3 {width: 25%;}
+.ProjectPage .Section .Columns .col-4 {width: 33.33%;}
+.ProjectPage .Section .Columns .col-5 {width: 41.66%;}
+.ProjectPage .Section .Columns .col-6 {width: 50%;}
+.ProjectPage .Section .Columns .col-7 {width: 58.33%;}
+.ProjectPage .Section .Columns .col-8 {width: 66.66%;}
+.ProjectPage .Section .Columns .col-9 {width: 75%;}
+.ProjectPage .Section .Columns .col-10 {width: 83.33%;}
+.ProjectPage .Section .Columns .col-11 {width: 91.66%;}
+.ProjectPage .Section .Columns .col-12 {width: 100%;}
+
 .ProjectPage .Section:last-of-type {
     border-bottom: none;
 }
@@ -70,6 +95,7 @@
     grid-row: top / title;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -256,6 +282,24 @@
     .ProjectPage .BannerSingleImage img {
         height: 10%;
     }
+
+    .ProjectPage .Section .Columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ProjectPage .Section .Columns .col-xs-1 {width: 8.33%;}
+    .ProjectPage .Section .Columns .col-xs-3 {width: 25%;}
+    .ProjectPage .Section .Columns .col-xs-2 {width: 16.66%;}
+    .ProjectPage .Section .Columns .col-xs-4 {width: 33.33%;}
+    .ProjectPage .Section .Columns .col-xs-5 {width: 41.66%;}
+    .ProjectPage .Section .Columns .col-xs-6 {width: 50%;}
+    .ProjectPage .Section .Columns .col-xs-7 {width: 58.33%;}
+    .ProjectPage .Section .Columns .col-xs-8 {width: 66.66%;}
+    .ProjectPage .Section .Columns .col-xs-9 {width: 75%;}
+    .ProjectPage .Section .Columns .col-xs-10 {width: 83.33%;}
+    .ProjectPage .Section .Columns .col-xs-11 {width: 91.66%;}
+    .ProjectPage .Section .Columns .col-xs-12 {width: 100%;}
 
     .ProjectPage .Header {
         grid-template-rows: [top] auto [title] auto [heading] auto [content] auto [heading] auto [content] auto [heading] auto [bottom];
