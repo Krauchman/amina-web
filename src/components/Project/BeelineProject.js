@@ -20,6 +20,12 @@ import analytics_result_1 from "./media/beeline/analytics_result_1.png";
 import analytics_result_2 from "./media/beeline/analytics_result_2.png";
 import final_jtbd from "./media/beeline/final_jtbd.png";
 import main_insight from "./media/beeline/main_insight.png";
+import identifying_gaps from "./media/beeline/identifying_gaps.png";
+import low_fidelity_prototype from "./media/beeline/low_fidelity_prototype.png";
+import solution_prototype_1 from "./media/beeline/solution_prototype_1.png";
+import solution_prototype_2 from "./media/beeline/solution_prototype_2.png";
+import solution_prototype_3 from "./media/beeline/solution_prototype_3.png";
+import solution_prototype_4 from "./media/beeline/solution_prototype_4.png";
 
 import { LazyImage } from "../Image";
 
@@ -82,10 +88,13 @@ export function BeelineProject() {
                     <p>To ensure we were solving the right problem — one that met user needs and aligned with our business goals — I used the Double Diamond Framework. However, there were times when I felt overwhelmed by the need to strictly follow the framework. This led to research artifacts that didn’t help in making actionable decisions. I became even more frustrated when I realized the problem I was researching wasn’t one my team could actually solve.</p>
                     <p>Instead of pushing forward, I found the courage to take a few steps back and discovered a bigger, more obvious problem. It was something we could solve with far fewer resources.  In the end, my process looked like this:</p>
 
-                    <img src={double_diamond} alt="Double Diamond Framework" loading="lazy" />
+                    <div className="Columns">
+                        <img src={double_diamond} className="col-xs-12 col-8" alt="Double Diamond Framework" loading="lazy" />
+                    </div>
                 </div>
 
                 <div className="Section">
+                    
                     <h2>Exploring wrong problem</h2>
 
                     <p>Context: I had only been with the Bonus program team for three weeks when my product manager asked me to conduct research. He wanted to figure out why Simply credit card issuances through MyBeeline spiked in the first few days of each month. The goal was to use this data on user motivations to increase the daily issuance rate of Simply cards.</p>
@@ -96,11 +105,13 @@ export function BeelineProject() {
 
                     <img src={activities_and_deliverables} alt="Activities and deliverables" loading="lazy" />
 
+                    
+                    
                     <h2>Research-question–generation workshop</h2>
 
                     <div className="Columns">
                         <p className="col-xs-12 col-8">To ensure our visions were aligned on the research problem, I held a couple of kick-off meetings with my product manager. In the second meeting that we dedicated to research question generation, we defined the key questions we wanted the research to address:</p>
-                        <img className="col-xs-5 col-4" src={monkey_meme} alt="Monkey meme" loading="lazy" />
+                        <img className="col-xs-12 col-4" src={monkey_meme} alt="Monkey meme" loading="lazy" />
                     </div>
 
                     <ol>
@@ -113,6 +124,8 @@ export function BeelineProject() {
 
                     <p>Gathering this information was intended to help me better understand our user profiles and identify their job stories.</p>
 
+                    
+                    
                     <h2>User Interviews: Struggles to Find Key Insights</h2>
 
                     <p>For user interviews, I targeted users who:</p>
@@ -140,6 +153,8 @@ export function BeelineProject() {
 
                     <img src={response_table_template} alt="Readable response table skeleton" loading="lazy" />  
 
+                    
+                    
                     <h2>Job stories</h2>
 
                     <p>After organizing the respondents' answers using the template, I identified the top two job stories for the Simply card. However, these job stories didn’t provoke actionable insights. I couldn't suggest specific solutions to improve the user experience that would involve my team. Most of the suggestions pointed to improvements in business processes by the Simply team.</p>
@@ -148,6 +163,8 @@ export function BeelineProject() {
 
                     <p>Our team has a biweekly Discovery meetings where we present new ideas/research results to our business stakeholders and collaborate on brainstorming solutions. When I presented the research results (job stories) on one of such meetings, their first question was, “What solutions do these job stories suggest for improving our product?” Honestly, I couldn’t think of any at that moment. I was so absorbed in the research that I overlooked actionable insights. After considering their feedback, I decided to shift the focus of the research.</p>
 
+                    
+                    
                     <h2>Searching overlooked insights</h2>
 
                     <p>After reviewing the respondents' answers and re-listening to the interview recordings, I found interface problems that were causing major frictions in users’ journey not only to issue Simply card but also to use bonuses for the first time:</p>
@@ -157,6 +174,8 @@ export function BeelineProject() {
                         <img className="col-xs-12 col-6" src={poor_communication_of_value} alt="Poor communication of value" loading="lazy" />
                     </div>
 
+                    
+                    
                     <h2>When release of new feature went unnoticed</h2>
 
                     <p>Clear communication of the new features and their value proposition was crucial to properly onboard a user into our bonus program and attract him from first touchpoint. However there was one major problem. The bonus program was implemented in a relatively short timeframe. That limited the time available for research and validation of the final designs with real end users. With insights from user interviews I had a hypothesis that the launch of our new features went unnoticed by users. I further confirmed it through analytics revealing that:</p>
@@ -166,6 +185,8 @@ export function BeelineProject() {
                         <img className="col-xs-12 col-6" src={analytics_result_2} alt="Poor communication of value" loading="lazy" />
                     </div>
 
+                    
+                    
                     <h2>Problem statement and metrics</h2>
 
                     <p>After the kick-off meeting with the product manager, we outlined the business goals and the key metrics we intended to increase:</p>
@@ -180,7 +201,9 @@ export function BeelineProject() {
                     <img src={problem_statement} alt="Problem statement" loading="lazy" />
 
                     <p>This issue needs addressing because, as a new product, the bonus program hasn't yet demonstrated the expected value to justify ongoing investment. As its functionality expands, it continues to consume resources while risking becoming hidden and poorly communicated. This could have insignificant impact on user engagement in the MyBeeline ecosystem, which is the primary goal of the bonus program.</p>
-
+                    
+                    
+                    
                     <h2>Revised job stories</h2>
 
                     <p>I reanalyzed respondents' answers and reviewed past research on bonus usage to create job stories for bonuses. This led to identifying the top two job stories for bonuses:</p>
@@ -201,6 +224,49 @@ export function BeelineProject() {
                     <p>Taking these 2 facts into consideration, I had the following main insight:</p>
 
                     <img src={main_insight} alt="Main insight" loading="lazy" />
+
+                    
+                    
+                    <h2>Identifying gaps in the customer journey</h2>
+
+                    <p>First, I created a Customer Journey Map (CJM) for users interacting with bonuses and issuing a Simply card to identify improvement opportunities. However, the process generated too many potential solutions. I decided to refine my focus and concentrate on the initial stages where users first encounter bonuses.</p>
+
+                    <img src={identifying_gaps} alt="Identifying gaps" loading="lazy" />
+
+                    <p>As I refined my focus, I created a User Journey Map to understand how users learn about bonuses. I quickly noticed that users had only one entry point—the bonus tag—which respondents reported as unremarkable. This insight, though obvious in hindsight, highlighted a critical gap: we had no other entry points to promote bonuses throughout MyBeeline.</p>
+
+                    <p>To address this, I brainstormed ways to effectively promote bonuses and incorporated these ideas into the User Journey Map (UJM). After presenting them to the product manager, we evaluated each idea for technical feasibility and priority. For the top ideas marked with stars, I developed low-fidelity prototypes to present to business stakeholders.</p>
+
+                    <img src={low_fidelity_prototype} alt="Low-fidelity prototype" loading="lazy" />
+
+
+                    
+                    <h2>What we are working on now?</h2>
+
+                    <p>I presented the revised research results to our business stakeholders and received positive feedback, especially for my approach of linking insights to business goals. After polishing the final  prototypes with consideration their feedback, I created high-fidelity flows. My team has started developing the first solution, while the second is nearly complete, thanks to collaboration with the MyBeeline Rewards team.</p>
+
+                    <img src={solution_prototype_1} alt="Instant bonus use at checkout" loading="lazy" />
+                    <img src={solution_prototype_2} alt="Bonuses in MyBeeline Rewards" loading="lazy" />
+
+                    
+                    
+                    <h2>Our next steps</h2>
+
+                    <p>Following the implementation of bonus usage at checkout and the bonus as rewards, our team will proceed with the following solutions:</p>
+
+                    <img src={solution_prototype_3} alt="Bonus in high-traffic page" loading="lazy" />
+                    <img src={solution_prototype_4} alt="Reminder to use bonuses" loading="lazy" />
+
+                    
+                    
+                    <h2>Further actions</h2>
+
+                    <ol>
+                        <li>As we complete the development of bonus usage at checkout and integration with Rewards, we will initially roll out the changes to a small subset of users (approximately 20%). This will allow us to monitor the impact on the MAU of the bonus page and bonus utilization rate, while also identifying any critical bugs. If the results are positive and issues are resolved, we will proceed with a full rollout to 100% of users.</li>
+                        <li>I have completed the final prototypes for the reminder tooltip. Once developers finish their high-priority tasks, they will proceed with implementing the tooltip.</li>
+                        <li>I will collaborate with the product designer of the “My Account” section to develop the bonus banner on the “My Plan” page, creating high-fidelity flows to hand off to the developers.</li>
+                        <li>Our UX research department is currently conducting a heuristic evaluation of the bonus page to identify usability issues and assess the effectiveness of its communication. The findings will help pinpoint areas that need redesigning, ensuring users receive all the necessary information about bonuses.</li>
+                    </ol>
 
                 </div>
 

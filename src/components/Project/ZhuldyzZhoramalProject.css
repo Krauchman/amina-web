@@ -10,4 +10,8 @@
     .ZhuldyzZhoramalProject .Banner img {
         transform: translate(-2%, 0)
     }
+
+    .ZhuldyzZhoramalProject .Header .Title {
+        font-size: 8vw;
+    }
 }

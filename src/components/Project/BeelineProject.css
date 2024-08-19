@@ -2,16 +2,24 @@
     background-color: #FDF7BB;
 }
 
+.ProjectPage .BannerSingleImage img {
+    max-width: 800px;
 
-.ProjectPage .Header .Title {
+    object-fit: cover;
+}
+
+.BeelineProject .Header .Title {
     font-size: 3em;
 }
 
 @media (max-width: 768px) {
     /* For mobile phones: */
 
-    .ProjectPage .Header .Title {
+    .BeelineProject .Header .Title {
         font-size: 6.5vw;
+        margin-top: 0.5em;
+
+        gap: 0.4em;
     }
 
 }
