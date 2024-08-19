@@ -17,9 +17,9 @@ export function Projects() {
         <div className="Projects-container">
 
             <Project
-                name="B2B PERSONAL OFFICE, BEELINE"
-                hover_name="BEELINE"
-                description="Digitalizing operations on business numbers for efficient management"
+                name="Bonuses in MyBeeline"
+                hover_name="Bonuses in MyBeeline"
+                description="Increasing discoverability of bonuses in MyBeeline"
                 link_to="projects/beeline"
                 src={beeline}
                 placeholder={beeline_low}
