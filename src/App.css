@@ -1,9 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap');
 
+@import url(font/satoshi/css/satoshi.css);
+
 :root {
   --color-primary: #FFFFFF;
   --color-accent: #141414;
   --color-subtle-accent: #6A6A6A;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1800,20,1.25,7,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  /* Step -2: 12.5px → 12.8px */
+  --step--2: clamp(0.7813rem, 0.7772rem + 0.0203vw, 0.8rem);
+  /* Step -1: 15px → 16px */
+  --step--1: clamp(0.9375rem, 0.924rem + 0.0676vw, 1rem);
+  /* Step 0: 18px → 20px */
+  --step-0: clamp(1.125rem, 1.098rem + 0.1351vw, 1.25rem);
+  /* Step 1: 21.6px → 25px */
+  --step-1: clamp(1.35rem, 1.3041rem + 0.2297vw, 1.5625rem);
+  /* Step 2: 25.92px → 31.25px */
+  --step-2: clamp(1.62rem, 1.548rem + 0.3601vw, 1.9531rem);
+  /* Step 3: 31.104px → 39.0625px */
+  --step-3: clamp(1.944rem, 1.8365rem + 0.5377vw, 2.4414rem);
+  /* Step 4: 37.3248px → 48.8281px */
+  --step-4: clamp(2.3328rem, 2.1773rem + 0.7773vw, 3.0518rem);
+  /* Step 5: 44.7898px → 61.0352px */
+  --step-5: clamp(2.7994rem, 2.5798rem + 1.0977vw, 3.8147rem);
+  /* Step 6: 53.7477px → 76.2939px */
+  --step-6: clamp(3.3592rem, 3.0546rem + 1.5234vw, 4.7684rem);
+  /* Step 7: 64.4973px → 95.3674px */
+  --step-7: clamp(4.0311rem, 3.6139rem + 2.0858vw, 5.9605rem);
 }
 
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1800,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -40,10 +67,16 @@
   --grid-gutter: var(--space-3xs);
 }
 
+body {
+  font-family: 'Satoshi-Medium';
+  font-size: var(--step-0);
+}
+
 .v2-page-container {
   background-color: var(--color-accent);
   width: 100%;
-  min-height: 100vw;
+  min-height: 100vh;
+  padding-block: var(--space-2xs);
 }
 
 .v2-page {
@@ -76,8 +109,24 @@
   display: grid;
   gap: var(--grid-gutter);
 
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
+}
+
+.v2-block.padding-2xs {
+  padding: var(--space-2xs);
+}
+
+.v2-block.padding-xs {
+  padding: var(--space-xs);
+}
+
+.v2-block.padding-s {
+  padding: var(--space-s);
+}
+
+.v2-block.padding-m {
+  padding: var(--space-m);
 }
 
 .v2-page-grid.home {
@@ -87,12 +136,82 @@
     grid-area: intro;
 
     grid-template-areas:
-      "navbar navbar navbar navbar navbar navbar"
-      "hello hello hello hello hello hello";
+      "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+      "hello hello hello hello hello hello hello hello hello hello hello hello";
 
 
     .hello {
       grid-area: hello;
+
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-items: left;
+
+      padding-block: var(--space-2xl);
+
+      .greeting {
+        font-size: calc(var(--step-2));
+        font-family: 'Satoshi-Regular';
+        color: var(--color-subtle-accent);
+      }
+
+      .message {
+        --message-font-size: calc(var(--step-4) + 0.3rem);
+        font-size: var(--message-font-size);
+        font-family: 'Satoshi-Bold';
+        line-height: calc(var(--message-font-size) * 1.1);
+
+        padding-block: var(--space-2xs)
+      }
+
+      .situation {
+        font-size: calc(var(--step-0)*1.1);
+        font-family: 'Satoshi-Regular';
+        color: var(--color-subtle-accent);
+        padding-top: var(--space-xs);
+      }
+    }
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: var(--space-2xs) auto var(--space-m);
+    grid-template-rows: calc(var(--step-7) * 4) calc(var(--step-3) + var(--space-xs)) auto;
+    gap: 0px;
+
+    img {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      border-radius: calc(var(--space-m) * 0.8);
+    }
+
+    .title {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+
+      font-size: var(--step-2);
+
+      display: flex;
+      align-items: end;
+    }
+
+    .description {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+
+      font-size: var(--step-0);
+      font-family: 'Satoshi-Regular';
+
+      display: flex;
+      align-items: start;
+
+      padding-bottom: var(--space-xs);
     }
   }
 
@@ -123,6 +242,43 @@
 
 .v2-navbar {
   grid-area: navbar;
+
+  display: flex;
+  justify-content: space-between;
+
+  .v2-navbar-logo {
+    width: var(--step-6);
+    object-fit: contain;
+  }
+
+  .v2-navbar-links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: var(--space-m);
+
+    .v2-navbar-link {
+      font-size: var(--step-0);
+    }
+
+    .v2-navbar-link.out {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--space-xs);
+
+      padding-block: var(--space-2xs);
+      padding-inline: var(--space-xs);
+      border-radius: var(--space-m);
+      background-color: var(--color-accent);
+      color: var(--color-primary);
+    }
+  }
+}
+
+.v2-link {
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 /* ============================================= OLD stuff ============================================= */
