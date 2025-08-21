@@ -1,5 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800&display=swap');
 
+:root {
+  --color-primary: #FFFFFF;
+  --color-accent: #141414;
+  --color-subtle-accent: #6A6A6A;
+}
+
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1800,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.549rem + 0.0676vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8615rem + 0.0676vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.098rem + 0.1351vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.647rem + 0.2027vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1959rem + 0.2703vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2939rem + 0.4054vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3919rem + 0.5405vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.5878rem + 0.8108vw, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.3125rem, 0.2449rem + 0.3378vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.4814rem + 0.4054vw, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.7939rem + 0.4054vw, 1.25rem);
+  --space-s-m: clamp(1.125rem, 0.9628rem + 0.8108vw, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.5118rem + 0.8784vw, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 1.9257rem + 1.6216vw, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 3.0236rem + 1.7568vw, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 3.8514rem + 3.2432vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.125rem, 0.8277rem + 1.4865vw, 2.5rem);
+}
+
+/* @link https://utopia.fyi/grid/calculator?c=320,18,1.2,1800,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --grid-max-width: 77.50rem;
+  --grid-gutter: var(--space-3xs);
+}
+
+.v2-page-container {
+  background-color: var(--color-accent);
+  width: 100%;
+  min-height: 100vw;
+}
+
+.v2-page {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.v2-page-grid {
+  display: grid;
+  gap: var(--grid-gutter);
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+
+.v2-page-grid.home {
+  grid-template-areas:
+    "intro intro intro intro intro intro intro intro intro intro intro intro"
+    "project1 project1 project1 project1 project1 project1 project2 project2 project2 project2 project2 project2"
+    "project3 project3 project3 project3 project3 project3 project4 project4 project4 project4 project4 project4"
+    "hero hero hero hero hero hero hero hero hero hero hero hero"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.v2-block {
+  background-color: var(--color-primary);
+  border-radius: var(--space-m);
+
+  display: grid;
+  gap: var(--grid-gutter);
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+
+.v2-page-grid.home {
+
+
+  .intro {
+    grid-area: intro;
+
+    grid-template-areas:
+      "navbar navbar navbar navbar navbar navbar"
+      "hello hello hello hello hello hello";
+
+
+    .hello {
+      grid-area: hello;
+    }
+  }
+
+  .project1 {
+    grid-area: project1;
+  }
+
+  .project2 {
+    grid-area: project2;
+  }
+
+  .project3 {
+    grid-area: project3;
+  }
+
+  .project4 {
+    grid-area: project4;
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}
+
+.v2-navbar {
+  grid-area: navbar;
+}
+
+/* ============================================= OLD stuff ============================================= */
+
 html {
   background-color: #FFFFFF;
 }

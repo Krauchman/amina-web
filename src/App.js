@@ -83,10 +83,10 @@ export default function App() {
 
 function Layout() {
   return (
-    <div>
-      <NavBar />
+    <div className="v2-page-container">
+      {/* <NavBar /> */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
