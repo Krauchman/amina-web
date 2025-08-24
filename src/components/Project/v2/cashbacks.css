@@ -1,0 +1,69 @@
+.v2-page-grid.cashbacks {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "intro intro intro intro"
+        "info desc desc desc"
+        "info win1 win2 win3"
+        "pres pres pres pres"
+        "footer footer footer footer";
+
+    .intro {
+        grid-area: intro;
+
+        display: grid;
+        grid-template-columns: var(--space-m) auto auto var(--space-m);
+        grid-template-rows: var(--space-m) auto var(--space-2xl) auto var(--space-l) auto var(--space-m);
+        grid-template-areas:
+            ". . . ."
+            ". navbar navbar ."
+            ". . . ."
+            ". maintext info ."
+            ". . . ."
+            ". cover cover ."
+            ". . . .";
+
+        .main-text {
+            grid-area: maintext;
+
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+
+            .title {
+                font-size: var(--step-5);
+                font-family: 'Satoshi-Bold'
+            }
+
+            .description {
+                font-family: 'Satoshi-Regular';
+            }
+        }
+
+        .info {
+
+            grid-area: info;
+
+            width: fit-content;
+            justify-self: right;
+
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-m);
+
+            .item {
+                font-family: 'Satoshi-Regular';
+                .key {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .cover {
+            grid-area: cover;
+
+            width: 100%;
+        }
+    }
+}

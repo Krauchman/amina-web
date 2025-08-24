@@ -135,7 +135,6 @@ body {
 
 .v2-page-grid.home {
 
-
   .intro {
     grid-area: intro;
 
@@ -489,26 +488,26 @@ body {
 .fade-enter,
 .fade-appear {
   opacity: 0;
-  transform: translate(0, 10px);
+  /* transform: translate(0, 10px); */
   z-index: 1;
 }
 
 .fade-enter-active,
 .fade-appear-active {
   opacity: 1;
-  transform: translate(0, 0);
+  /* transform: translate(0, 0); */
 
   transition: opacity 300ms ease-out, transform 300ms ease;
 }
 
 .fade-exit {
   opacity: 1;
-  transform: translate(0, 0);
+  /* transform: translate(0, 0); */
 }
 
 .fade-exit-active {
   opacity: 0;
-  transform: translate(0, 10px);
+  /* transform: translate(0, 10px); */
 
   transition: opacity 300ms ease-out, transform 300ms ease;
 }

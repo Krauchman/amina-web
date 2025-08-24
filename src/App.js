@@ -8,18 +8,20 @@ import { createRef } from 'react'
 
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-import { Home, About, AULAProject, AULAProProject, ZhuldyzZhoramalProject, BeelineProject } from "./components";
+import { Home } from "./components";
+import { Cashbacks } from "./components/Project/v2";
 
 import { Helmet } from "react-helmet";
 
 
 const routes = [
   { path: '/', element: <Home />, nodeRef: createRef() },
-  { path: '/about', element: <About />, nodeRef: createRef() },
-  { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
-  { path: 'projects/aula-pro', element: <AULAProProject />, nodeRef: createRef() },
-  { path: 'projects/zhuldyz-zhoramal', element: <ZhuldyzZhoramalProject />, nodeRef: createRef() },
-  { path: 'projects/beeline', element: <BeelineProject />, nodeRef: createRef() },
+  { path: '/cashbacks', element: <Cashbacks />, nodeRef: createRef() },
+  // { path: '/about', element: <About />, nodeRef: createRef() },
+  // { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
+  // { path: 'projects/aula-pro', element: <AULAProProject />, nodeRef: createRef() },
+  // { path: 'projects/zhuldyz-zhoramal', element: <ZhuldyzZhoramalProject />, nodeRef: createRef() },
+  // { path: 'projects/beeline', element: <BeelineProject />, nodeRef: createRef() },
 ]
 
 const noMatchRef = createRef()
