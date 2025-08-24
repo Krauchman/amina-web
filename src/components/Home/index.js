@@ -1,9 +1,6 @@
-import { Intro } from "./Intro";
-import { Projects } from "./Projects";
-
 import { Helmet } from "react-helmet";
 
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import NavbarLogo from './media/navbar-logo.png';
 import LinkArrowWhite from './media/link-arrow.svg';
@@ -30,13 +27,13 @@ export function Home() {
                         <div className="v2-navbar">
                             <img src={NavbarLogo} alt="logo" className="v2-navbar-logo" />
                             <div className="v2-navbar-links">
-                                <Link to="/works" className="v2-link v2-navbar-link">
+                                <Link smooth to="#works" className="v2-link v2-navbar-link">
                                     Works
                                 </Link>
-                                <Link to="/values" className="v2-link v2-navbar-link">
+                                <Link smooth to="#values" className="v2-link v2-navbar-link">
                                     Values
                                 </Link>
-                                <Link to="/contact" className="v2-link v2-navbar-link">
+                                <Link smooth to="#contact" className="v2-link v2-navbar-link">
                                     Contact
                                 </Link>
                                 <Link to="/get-in-touch" className="v2-link v2-navbar-link out">
@@ -64,7 +61,7 @@ export function Home() {
                     </div>
 
 
-                    <div className="v2-block padding-2xs project project1">
+                    <div id="works" className="v2-block padding-2xs project project1">
                         <img src={Project1} alt="Cashbacks" />
                         <div className="text">
                             <div className="title">Cashbacks</div>
@@ -86,7 +83,7 @@ export function Home() {
                     </div>
 
 
-                    <div className="v2-block hero">
+                    <div id="values" className="v2-block hero">
                         <div className="summary">
                             Alongside the core values I believe every product
                             designer should strive for—<b>craft</b>, <b>clarity</b>, and
@@ -129,7 +126,7 @@ export function Home() {
                     </div>
 
 
-                    <div className="v2-block footer">
+                    <div id="contact" className="v2-block footer">
                         <div className="status">
                             Open to new
                             <span className="v2-no-wrap-group">
@@ -137,11 +134,15 @@ export function Home() {
                             </span>
                         </div>
                         <div className="contacts">
-                            <a className="v2-link" target="_blank" href="mailto:alenamina1010@gmail.com">alenamina1010@gmail.com</a>
-                            <a className="v2-link" target="_blank" href="https://www.linkedin.com/in/aminaalen/">LinkedIn</a>
+                            <a className="v2-link" target="_blank" rel="noreferrer" href="mailto:alenamina1010@gmail.com">
+                                alenamina1010@gmail.com
+                            </a>
+                            <a className="v2-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aminaalen/">
+                                LinkedIn
+                            </a>
                         </div>
                         <div className="photo-container">
-                            <img src={FooterPhoto} alt="my photo" />
+                            <img src={FooterPhoto} alt="me" />
                         </div>
                     </div>
 

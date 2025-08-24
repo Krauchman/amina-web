@@ -8,7 +8,7 @@ import { createRef } from 'react'
 
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-import { Home, NavBar, Footer, About, AULAProject, AULAProProject, ZhuldyzZhoramalProject, BeelineProject } from "./components";
+import { Home, About, AULAProject, AULAProProject, ZhuldyzZhoramalProject, BeelineProject } from "./components";
 
 import { Helmet } from "react-helmet";
 
@@ -35,6 +35,24 @@ export default function App() {
       window.history.scrollRestoration = "manual"
     }
   }, []);
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+
+      // A small timeout can be helpful to ensure the element is rendered
+      // before we try to scroll to it, especially with complex layouts.
+      setTimeout(() => {
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // If there is NO hash in the URL, scroll to the top of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [location.hash]); // This effect re-runs every time the hash changes
 
   return (
     <div>
