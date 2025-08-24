@@ -65,11 +65,6 @@ export function Home() {
 
                     <div className="v2-block padding-2xs project project2">1</div>
 
-                    <div className="v2-block padding-2xs project project3">1</div>
-
-                    <div className="v2-block padding-2xs project project4">1</div>
-
-
                     <div className="v2-block hero">1</div>
                     <div className="v2-block footer">1</div>
 

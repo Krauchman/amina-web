@@ -97,7 +97,6 @@ body {
   grid-template-areas:
     "intro intro intro intro intro intro intro intro intro intro intro intro"
     "project1 project1 project1 project1 project1 project1 project2 project2 project2 project2 project2 project2"
-    "project3 project3 project3 project3 project3 project3 project4 project4 project4 project4 project4 project4"
     "hero hero hero hero hero hero hero hero hero hero hero hero"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
@@ -221,14 +220,6 @@ body {
 
   .project2 {
     grid-area: project2;
-  }
-
-  .project3 {
-    grid-area: project3;
-  }
-
-  .project4 {
-    grid-area: project4;
   }
 
   .hero {
