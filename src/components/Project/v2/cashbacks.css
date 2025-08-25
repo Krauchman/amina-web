@@ -13,16 +13,16 @@
         grid-area: intro;
 
         display: grid;
-        grid-template-columns: var(--space-m) auto auto var(--space-m);
+        grid-template-columns: var(--space-m) 1fr var(--space-xl) auto var(--space-m);
         grid-template-rows: var(--space-m) auto var(--space-2xl) auto var(--space-l) auto var(--space-m);
         grid-template-areas:
-            ". . . ."
-            ". navbar navbar ."
-            ". . . ."
-            ". maintext info ."
-            ". . . ."
-            ". cover cover ."
-            ". . . .";
+            ". . . . ."
+            ". navbar navbar navbar ."
+            ". . . . ."
+            ". maintext . info ."
+            ". . . . ."
+            ". cover cover cover ."
+            ". . . . .";
 
         .main-text {
             grid-area: maintext;
@@ -54,6 +54,7 @@
 
             .item {
                 font-family: 'Satoshi-Regular';
+
                 .key {
                     font-weight: bold;
                 }
@@ -64,6 +65,145 @@
             grid-area: cover;
 
             width: 100%;
+        }
+    }
+
+    .info {
+        grid-area: info;
+
+        display: grid;
+        grid-template-columns: var(--space-m) 1fr var(--space-m);
+        grid-template-rows: var(--space-m) auto var(--space-xl) auto;
+        grid-template-areas:
+            ". . ."
+            ". content ."
+            ". . ."
+            ". decor .";
+
+        .content {
+            grid-area: content;
+
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-l);
+
+            .section {
+                display: flex;
+                flex-direction: column;
+                gap: var(--space-2xs);
+
+                .items {
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--space-m);
+
+                    .item {
+                        font-family: 'Satoshi-Regular';
+                    }
+                }
+            }
+        }
+
+        .decor {
+            grid-area: decor;
+
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .desc {
+        grid-area: desc;
+
+        display: flex;
+        flex-direction: column;
+        padding: var(--space-xl);
+
+        h1 {
+            font-size: var(--step-3);
+            font-family: 'Satoshi-Medium';
+            font-weight: normal;
+
+            margin-top: var(--space-m);
+            margin-bottom: 0px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        h1:first-child {
+            margin-top: 0px;
+        }
+
+        h1::before {
+            /* This is required for the pseudo-element to be generated */
+            content: '';
+            /* Allows us to set width and height */
+            display: inline-block;
+
+            /* --- Decor Styling --- */
+            width: var(--step-1);
+            height: var(--step-1);
+            margin-right: var(--space-xs);
+
+            /* --- Media File --- */
+            background-image: url('./media/project1-desc-heading-decor.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        p {
+            font-size: var(--step-1);
+            font-family: 'Satoshi-Regular';
+            font-weight: normal;
+
+            margin-top: var(--space-2xs);
+            margin-bottom: 0px;
+
+            ul {
+                margin-top: 0px;
+
+                li {
+                    padding-inline-start: var(--space-3xs);
+                }
+            }
+        }
+    }
+
+    .win1 {
+        grid-area: win1;
+    }
+
+    .win2 {
+        grid-area: win2;
+    }
+
+    .win3 {
+        grid-area: win3;
+    }
+
+    .win {
+        background-color: var(--color-contast);
+        color: var(--color-primary);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-s);
+
+        padding: var(--space-m);
+
+        font-size: var(--step-2);
+        text-align: center;
+
+        img {
+            width: calc(var(--space-3xl) * 0.8);
         }
     }
 }
