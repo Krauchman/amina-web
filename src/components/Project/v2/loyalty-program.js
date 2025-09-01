@@ -5,12 +5,12 @@ import { Helmet } from "react-helmet";
 import { NavbarV2 } from "../../NavBar/v2";
 import { FooterV2 } from "../../Footer/v2";
 
-import Cover from "./media/cover1.png"
+import Cover from "./media/cover2.png"
 import InfoDecor from "./media/project1-info-decor.png"
 import Ach1Decor from "./media/project1-ach1-decor.png"
 import Ach2Decor from "./media/project1-ach2-decor.png"
 import Ach3Decor from "./media/project1-ach3-decor.png"
-import PresentationCover from "./media/project1-presentation-cover.png"
+import PresentationCover from "./media/project2-presentation-cover.png"
 import PresentationLinkEye from './media/presentation-link-eye.svg';
 
 export function LoyaltyProgram() {
