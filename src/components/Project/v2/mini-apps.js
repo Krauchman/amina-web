@@ -1,23 +1,26 @@
-import "./cashbacks.css";
+import "./mini-apps.css";
 
 import { Helmet } from "react-helmet";
 
 import { NavbarV2 } from "../../NavBar/v2";
+import { FooterV2 } from "../../Footer/v2";
 
 import Cover from "./media/cover1.png"
 import InfoDecor from "./media/project1-info-decor.png"
 import Ach1Decor from "./media/project1-ach1-decor.png"
 import Ach2Decor from "./media/project1-ach2-decor.png"
 import Ach3Decor from "./media/project1-ach3-decor.png"
+import PresentationCover from "./media/project1-presentation-cover.png"
+import PresentationLinkEye from './media/presentation-link-eye.svg';
 
-export function Cashbacks() {
+export function MiniApps() {
     return <div>
         <Helmet>
-            <title>Cashbacks</title>
+            <title>Lifestyle Mini Apps</title>
         </Helmet>
 
         <div className="v2-page">
-            <div className="v2-page-grid cashbacks">
+            <div className="v2-page-grid mini-apps">
                 <div className="v2-block intro">
                     <NavbarV2 />
 
@@ -83,12 +86,12 @@ export function Cashbacks() {
                     <h1>Challenges</h1>
                     <p>
                         Given the context in the overview, we faced 3 key challenges:
-                        <ul>
-                            <li>MVP focus — Designing features attractive enough for users but simple enough to ship fast with minimal dev effort.</li>
-                            <li>User experience — Building seamless flows that felt intuitive and competitive with standalone lifestyle apps.</li>
-                            <li>Internal alignment — Replacing a high-revenue tab required aligning stakeholder visions, preserving KPIs and integrating both directions into a shared interface.</li>
-                        </ul>
                     </p>
+                    <ul>
+                        <li>MVP focus — Designing features attractive enough for users but simple enough to ship fast with minimal dev effort.</li>
+                        <li>User experience — Building seamless flows that felt intuitive and competitive with standalone lifestyle apps.</li>
+                        <li>Internal alignment — Replacing a high-revenue tab required aligning stakeholder visions, preserving KPIs and integrating both directions into a shared interface.</li>
+                    </ul>
                 </div>
 
 
@@ -108,6 +111,35 @@ export function Cashbacks() {
                     <img src={Ach3Decor} alt="decor" />
                     MVP shipped in 5 months with a focused roadmap
                 </div>
+
+
+                <div className="v2-block pres">
+                    <div className="text">
+                        <h1>Curious to know more?</h1>
+                        <p>
+                            Explore the full design process in the presentation below — including
+                            early concepts, key insights, and how we iterated on flows before launch
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://pitch.com/v/lifestyle-services-in-janymda-superapp-jxm6nc"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="presentation v2-link"
+                    >
+                        <img src={PresentationCover} className="cover-img" alt="presentation cover" />
+                        <div className="container">
+                            <div className="hover-content">
+                                <img src={PresentationLinkEye} alt="eye" />
+                                View presentation
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <FooterV2 />
             </div>
         </div>
 

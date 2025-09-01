@@ -1,16 +1,16 @@
+import "./index.css"
+
 import { Helmet } from "react-helmet";
 
 import { NavbarV2 } from "../NavBar/v2";
-
-import LinkArrowBlack from './media/link-arrow-black.svg';
+import { FooterV2 } from "../Footer/v2";
 
 import Project1 from './media/project1.png';
 import Project2 from './media/project2.png';
 
 import HeroDecor from './media/hero-decor.png';
 
-import FooterPhoto from './media/footer-photo.png';
-import StatusDot from './media/status-dot.svg';
+import ProjectLinkEye from './media/project-link-eye.svg';
 
 export function Home() {
     return (
@@ -29,37 +29,47 @@ export function Home() {
 
                             <div className="message">
                                 Driven by impact, grounded in structure,
-                                <br />
                                 thinking in products — not just features.
                             </div>
 
                             <div className="situation">
                                 Currently at Beeline, leading the design system and
-                                <br />
                                 building products in cashback and lifestyle mini apps teams
                             </div>
                         </div>
                     </div>
 
 
-                    <div id="works" className="v2-block padding-2xs project project1">
-                        <img src={Project1} alt="Cashbacks" />
+                    <a href="/mini-apps" id="works" className="v2-block v2-link padding-2xs project project1">
+                        <div className="cover-container">
+                            <img src={Project1} alt="Lifestyle Mini Apps" className="cover" />
+                            <div className="hover-container">
+                                <div className="hover-content">
+                                    <img src={ProjectLinkEye} alt="eye" />
+                                    View case
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="text">
+                            <div className="title">Lifestyle Mini Apps</div>
+                            <div className="description">Launching MVP in 5 month and increasing ARPU by 5%</div>
+                        </div>
+                    </a>
+                    <div className="v2-block v2-link padding-2xs project project2">
+                        <div className="cover-container">
+                            <img src={Project2} alt="Cashbacks" className="cover" />
+                            <div className="hover-container">
+                                <div className="hover-content">
+                                    <img src={ProjectLinkEye} alt="eye" />
+                                    View case
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="text">
                             <div className="title">Cashbacks</div>
                             <div className="description">Increasing discoverability of cashbacks by 12%</div>
-                        </div>
-                        <div className="arrow-container">
-                            <img src={LinkArrowBlack} alt="arrow" className="arrow" />
-                        </div>
-                    </div>
-                    <div className="v2-block padding-2xs project project2">
-                        <img src={Project2} alt="Cashbacks" />
-                        <div className="text">
-                            <div className="title">Cashbacks</div>
-                            <div className="description">Increasing discoverability of cashbacks by 12%</div>
-                        </div>
-                        <div className="arrow-container">
-                            <img src={LinkArrowBlack} alt="arrow" className="arrow" />
                         </div>
                     </div>
 
@@ -107,25 +117,7 @@ export function Home() {
                     </div>
 
 
-                    <div id="contact" className="v2-block footer">
-                        <div className="status">
-                            Open to new
-                            <span className="v2-no-wrap-group">
-                                opportunities <img src={StatusDot} alt="status" />
-                            </span>
-                        </div>
-                        <div className="contacts">
-                            <a className="v2-link" target="_blank" rel="noreferrer" href="mailto:alenamina1010@gmail.com">
-                                alenamina1010@gmail.com
-                            </a>
-                            <a className="v2-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aminaalen/">
-                                LinkedIn
-                            </a>
-                        </div>
-                        <div className="photo-container">
-                            <img src={FooterPhoto} alt="me" />
-                        </div>
-                    </div>
+                    <FooterV2 />
 
                 </div>
             </div>

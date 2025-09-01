@@ -9,14 +9,14 @@ import { createRef } from 'react'
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 import { Home } from "./components";
-import { Cashbacks } from "./components/Project/v2";
+import { MiniApps } from "./components/Project/v2/mini-apps";
 
 import { Helmet } from "react-helmet";
 
 
 const routes = [
-  { path: '/', element: <Home />, nodeRef: createRef() },
-  { path: '/cashbacks', element: <Cashbacks />, nodeRef: createRef() },
+  { index: true, element: <Home />, nodeRef: createRef() },
+  { path: '/mini-apps', element: <MiniApps />, nodeRef: createRef() },
   // { path: '/about', element: <About />, nodeRef: createRef() },
   // { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
   // { path: 'projects/aula-pro', element: <AULAProProject />, nodeRef: createRef() },
@@ -30,7 +30,10 @@ const noMatchRef = createRef()
 export default function App() {
   const location = useLocation();
   const { nodeRef } =
-    routes.find((route) => route.path === location.pathname) ?? { nodeRef: noMatchRef }
+    routes.find((route) => {
+      if (route.index) return location.pathname === '/';
+      return route.path === location.pathname;
+    }) ?? { nodeRef: noMatchRef };
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
@@ -71,13 +74,6 @@ export default function App() {
           timeout={350}
           unmountOnExit
           appear
-
-          onEnter={_ => {
-            document.documentElement.scrollTo({
-              top: 0,
-              left: 0,
-            });
-          }}
         >
           <div ref={nodeRef}>
 
@@ -85,7 +81,12 @@ export default function App() {
               <Route path="/" element={<Layout />}>
 
                 {routes.map((route) => (
-                  <Route key={route.path} path={route.path} element={route.element} />
+                  <Route
+                    key={route.path || 'index'} // Key needs a fallback for the index route
+                    index={route.index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
 
                 <Route path="*" element={<NoMatch />} />
