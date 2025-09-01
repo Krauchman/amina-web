@@ -56,7 +56,7 @@ export function Home() {
                             <div className="description">Launching MVP in 5 month and increasing ARPU by 5%</div>
                         </div>
                     </a>
-                    <div className="v2-block v2-link padding-2xs project project2">
+                    <a href="/loyalty-program" className="v2-block v2-link padding-2xs project project2">
                         <div className="cover-container">
                             <img src={Project2} alt="Cashbacks" className="cover" />
                             <div className="hover-container">
@@ -68,10 +68,10 @@ export function Home() {
                         </div>
 
                         <div className="text">
-                            <div className="title">Cashbacks</div>
+                            <div className="title">Loyalty program in Janymda</div>
                             <div className="description">Increasing discoverability of cashbacks by 12%</div>
                         </div>
-                    </div>
+                    </a>
 
 
                     <div id="values" className="v2-block hero">

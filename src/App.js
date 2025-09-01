@@ -10,6 +10,7 @@ import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 import { Home } from "./components";
 import { MiniApps } from "./components/Project/v2/mini-apps";
+import { LoyaltyProgram } from "./components/Project/v2/loyalty-program";
 
 import { Helmet } from "react-helmet";
 
@@ -17,6 +18,7 @@ import { Helmet } from "react-helmet";
 const routes = [
   { index: true, element: <Home />, nodeRef: createRef() },
   { path: '/mini-apps', element: <MiniApps />, nodeRef: createRef() },
+  { path: '/loyalty-program', element: <LoyaltyProgram />, nodeRef: createRef() },
   // { path: '/about', element: <About />, nodeRef: createRef() },
   // { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
   // { path: 'projects/aula-pro', element: <AULAProProject />, nodeRef: createRef() },

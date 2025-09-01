@@ -1,4 +1,4 @@
-.v2-page-grid.mini-apps {
+.v2-page-grid.loyalty-program {
     display: grid;
     grid-template-columns: 20% 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -34,12 +34,12 @@
             .title {
                 font-size: var(--step-5);
                 font-family: 'Satoshi-Bold';
-                width: min(100%, 35em);
+                width: min(100%, 45em);
             }
 
             .description {
                 font-family: 'Satoshi-Regular';
-                width: min(100%, 25em);
+                width: min(100%, 35em);
             }
         }
 
@@ -245,7 +245,7 @@
     }
 }
 
-.v2-page-grid.mini-apps {
+.v2-page-grid.loyalty-program {
     h1 {
         font-size: var(--step-3);
         font-family: 'Satoshi-Medium';
