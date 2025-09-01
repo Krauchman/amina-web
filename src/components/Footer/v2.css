@@ -1,0 +1,49 @@
+.footer {
+    grid-area: footer;
+
+    display: grid;
+    grid-template-columns: var(--space-s) auto clamp(var(--space-s), 15vw, calc(var(--space-2xl) * 2)) auto var(--space-s);
+    grid-template-rows: var(--space-s) auto auto var(--space-s);
+
+    .status {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        font-size: clamp(var(--step-1), 4.2vw, var(--step-5));
+        font-family: 'Satoshi-Bold';
+
+        img {
+            vertical-align: middle;
+            width: var(--step--1);
+        }
+    }
+
+    .contacts {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: var(--space-l);
+
+        font-size: var(--step-1);
+
+        .v2-link {
+            text-decoration: underline;
+        }
+    }
+
+    .photo-container {
+        grid-column: 4 / 5;
+        grid-row: 2 / 4;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}

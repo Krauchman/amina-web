@@ -8,18 +8,22 @@ import { createRef } from 'react'
 
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
-import { Home, NavBar, Footer, About, AULAProject, AULAProProject, ZhuldyzZhoramalProject, BeelineProject } from "./components";
+import { Home } from "./components";
+import { MiniApps } from "./components/Project/v2/mini-apps";
+import { LoyaltyProgram } from "./components/Project/v2/loyalty-program";
 
 import { Helmet } from "react-helmet";
 
 
 const routes = [
-  { path: '/', element: <Home />, nodeRef: createRef() },
-  { path: '/about', element: <About />, nodeRef: createRef() },
-  { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
-  { path: 'projects/aula-pro', element: <AULAProProject />, nodeRef: createRef() },
-  { path: 'projects/zhuldyz-zhoramal', element: <ZhuldyzZhoramalProject />, nodeRef: createRef() },
-  { path: 'projects/beeline', element: <BeelineProject />, nodeRef: createRef() },
+  { index: true, element: <Home />, nodeRef: createRef() },
+  { path: '/mini-apps', element: <MiniApps />, nodeRef: createRef() },
+  { path: '/loyalty-program', element: <LoyaltyProgram />, nodeRef: createRef() },
+  // { path: '/about', element: <About />, nodeRef: createRef() },
+  // { path: 'projects/aula', element: <AULAProject />, nodeRef: createRef() },
+  // { path: 'projects/aula-pro', element: <AULAProProject />, nodeRef: createRef() },
+  // { path: 'projects/zhuldyz-zhoramal', element: <ZhuldyzZhoramalProject />, nodeRef: createRef() },
+  // { path: 'projects/beeline', element: <BeelineProject />, nodeRef: createRef() },
 ]
 
 const noMatchRef = createRef()
@@ -28,13 +32,34 @@ const noMatchRef = createRef()
 export default function App() {
   const location = useLocation();
   const { nodeRef } =
-    routes.find((route) => route.path === location.pathname) ?? { nodeRef: noMatchRef }
+    routes.find((route) => {
+      if (route.index) return location.pathname === '/';
+      return route.path === location.pathname;
+    }) ?? { nodeRef: noMatchRef };
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual"
     }
   }, []);
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+
+      // A small timeout can be helpful to ensure the element is rendered
+      // before we try to scroll to it, especially with complex layouts.
+      setTimeout(() => {
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // If there is NO hash in the URL, scroll to the top of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [location.hash]); // This effect re-runs every time the hash changes
 
   return (
     <div>
@@ -51,13 +76,6 @@ export default function App() {
           timeout={350}
           unmountOnExit
           appear
-
-          onEnter={_ => {
-            document.documentElement.scrollTo({
-              top: 0,
-              left: 0,
-            });
-          }}
         >
           <div ref={nodeRef}>
 
@@ -65,7 +83,12 @@ export default function App() {
               <Route path="/" element={<Layout />}>
 
                 {routes.map((route) => (
-                  <Route key={route.path} path={route.path} element={route.element} />
+                  <Route
+                    key={route.path || 'index'} // Key needs a fallback for the index route
+                    index={route.index}
+                    path={route.path}
+                    element={route.element}
+                  />
                 ))}
 
                 <Route path="*" element={<NoMatch />} />
@@ -83,10 +106,10 @@ export default function App() {
 
 function Layout() {
   return (
-    <div>
-      <NavBar />
+    <div className="v2-page-container">
+      {/* <NavBar /> */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
