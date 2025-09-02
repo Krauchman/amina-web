@@ -33,8 +33,8 @@ export function Home() {
                             </div>
 
                             <div className="situation">
-                                Currently at Beeline, leading the design system and
-                                building products in cashback and lifestyle mini apps teams
+                                Currently at QazCode, leading the design system and building
+                                products in loyalty program and lifestyle mini apps teams
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export function Home() {
 
                         <div className="text">
                             <div className="title">Lifestyle Mini Apps</div>
-                            <div className="description">Launching MVP in 5 month and increasing ARPU by 5%</div>
+                            <div className="description">Launching a new business vertical in 5 months</div>
                         </div>
                     </a>
                     <a href="/loyalty-program" className="v2-block v2-link padding-2xs project project2">
@@ -69,7 +69,7 @@ export function Home() {
 
                         <div className="text">
                             <div className="title">Loyalty program in Janymda</div>
-                            <div className="description">Increasing discoverability of cashbacks by 12%</div>
+                            <div className="description">Improving cashback redemption rate by 12%</div>
                         </div>
                     </a>
 
@@ -77,8 +77,8 @@ export function Home() {
                     <div id="values" className="v2-block hero">
                         <div className="summary">
                             Alongside the core values I believe every product
-                            designer should strive for—<b>craft</b>, <b>clarity</b>, and
-                            <b> collaboration</b>—I also try to bring qualities that I’ve
+                            designer should strive for, such as <b>craft</b>, <b>clarity</b>, and <b> collaboration</b>,
+                            I also try to bring qualities that I’ve
                             seen elevate good design into great products
                         </div>
                         <div className="decor-conatiner">

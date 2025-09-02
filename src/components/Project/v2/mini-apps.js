@@ -27,8 +27,8 @@ export function MiniApps() {
                     <div className="main-text">
                         <div className="title">Lifestyle Mini Apps</div>
                         <div className="description">
-                            Launching a new vertical for everyday services
-                            while protecting e-commerce revenue and proving ROI fast.
+                            Launching a new business vertical of everyday services and
+                            driving key business metrics within the first months after launch
                         </div>
                     </div>
                     <div className="info">
@@ -97,19 +97,22 @@ export function MiniApps() {
 
                 <div className="v2-block win win1">
                     <img src={Ach1Decor} alt="decor" />
-                    MAU hit 10,000+ during the staged rollout
+                    GMV:<br />
+                    ↑ 1,206% in the first 3 months
                 </div>
 
 
                 <div className="v2-block win win2">
                     <img src={Ach2Decor} alt="decor" />
-                    Average order reached 12,000₸ in just 3 months
+                    Average Order Value:<br />
+                    ↑ 291% in the first 3 months
                 </div>
 
 
                 <div className="v2-block win win3">
                     <img src={Ach3Decor} alt="decor" />
-                    MVP shipped in 5 months with a focused roadmap
+                    Cart Conversion Rate:<br />
+                    ↑ 230% in the first 3 months
                 </div>
 
 
@@ -117,8 +120,8 @@ export function MiniApps() {
                     <div className="text">
                         <h1>Curious to know more?</h1>
                         <p>
-                            Explore the full design process in the presentation below — including
-                            early concepts, key insights, and how we iterated on flows before launch
+                            Explore the full design process in the presentation below including early concepts,
+                            key insights, and how we iterated on flows before launch
                         </p>
                     </div>
 

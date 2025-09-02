@@ -35,7 +35,7 @@
       }
 
       .situation {
-        width: min(26em, 100%);
+        width: min(28em, 100%);
         font-size: clamp(var(--step--2), 1.7vw, var(--step-1));
         font-family: 'Satoshi-Regular';
         color: var(--color-subtle-accent);

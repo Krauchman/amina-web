@@ -27,8 +27,8 @@ export function LoyaltyProgram() {
                     <div className="main-text">
                         <div className="title">Loyalty program in Janymda</div>
                         <div className="description">
-                            Most users never noticed the loyalty program in Janymda SuperApp — I redesigned it to
-                            make cashback visible, contextual, and effortless to use
+                            Transforming Janymda SuperApp’s loyalty program from invisible to
+                            intuitive, ensuring users could easily access and benefit from cashback
                         </div>
                     </div>
                     <div className="info">
@@ -117,8 +117,8 @@ export function LoyaltyProgram() {
                     <div className="text">
                         <h1>Curious to know more?</h1>
                         <p>
-                            Explore the full design process in the presentation below — including early
-                            concepts, key insights, and how we iterated on flows before launch
+                            Explore the full design process in the presentation below including early concepts,
+                            key insights, and how we iterated on flows before launch
                         </p>
                     </div>
 
